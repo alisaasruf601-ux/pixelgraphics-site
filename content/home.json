@@ -3,19 +3,19 @@
     "kicker": "Creative Without Borders",
     "headline": [
       {
-        "text": "Design.",
+        "text": "BE SEEN.",
         "accent": false
       },
       {
-        "text": "Market.",
+        "text": "BE TRUSTED.",
         "accent": false
       },
       {
-        "text": "Grow Your",
+        "text": "BE CHOSEN.",
         "accent": true
       },
       {
-        "text": "Brand.",
+        "text": "",
         "accent": true
       }
     ],
@@ -28,7 +28,7 @@
       "label": "Explore Services",
       "link": "/services"
     },
-    "markets": "Netherlands · Suriname · Brazil · and clients worldwide"
+    "markets": "Based in Suriname | Trusted by brands worldwide"
   },
   "services": {
     "kicker": "What we do",
