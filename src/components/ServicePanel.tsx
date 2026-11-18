@@ -91,7 +91,7 @@ export function ServicePanel({ item, onClose }: { item: ShowcaseItem | null; onC
               {/* Text column */}
               <div className="min-h-0 px-5 pb-10 pt-7 sm:px-10 md:overflow-y-auto md:py-10">
                 <motion.p {...fade(0.12)} className="text-xs font-semibold tracking-[0.2em] text-teal">SERVICE {item.number}</motion.p>
-                <motion.h2 {...fade(0.16)} id="service-panel-title" data-tina-field={tf(item.src, "title")} className="mt-3 text-balance text-[2rem] text-cloud sm:text-[2.6rem]">{item.title}</motion.h2>
+                <motion.h2 {...fade(0.16)} id="service-panel-title" data-tina-field={tf(item.src, "title")} className="mt-3 text-balance text-[1.65rem] text-cloud sm:text-[2.6rem]">{item.title}</motion.h2>
                 <motion.p {...fade(0.2)} data-tina-field={tf(item.dept, "intro")} className="mt-5 text-[15px] leading-relaxed text-ink-200 sm:text-base">{item.dept.intro}</motion.p>
 
                 <motion.div {...fade(0.26)}>

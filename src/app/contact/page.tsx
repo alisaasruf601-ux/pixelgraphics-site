@@ -33,7 +33,7 @@ export default function ContactPage() {
             )}
           </aside>
           <div className="rounded-panel border border-white/[0.07] bg-ink-800/50 p-6 sm:p-10">
-            <h2 className="text-3xl text-cloud">Send us a <span className="text-teal">message</span></h2>
+            <h2 className="text-2xl text-cloud sm:text-3xl">Send us a <span className="text-teal">message</span></h2>
             <p className="mb-8 mt-2 text-ink-300">Fields marked <span className="text-teal">*</span> are required.</p>
             <Suspense fallback={<p className="text-ink-300">Loading form…</p>}><ContactForm /></Suspense>
           </div>

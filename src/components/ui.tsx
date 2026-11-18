@@ -23,7 +23,7 @@ export function SectionHeading({ kicker, title, accent, intro, align = "split", 
   const heading = (
     <div className={align === "center" ? "mx-auto max-w-3xl text-center" : ""}>
       {kicker && <Kicker dark={dark} field={fields.kicker} className={`mb-5 ${align === "center" ? "justify-center" : ""}`}>{kicker}</Kicker>}
-      <Tag className={`text-balance [--fs:2.6rem] sm:[--fs:3.75rem] lg:[--fs:4.5rem] ${dark ? "text-ink" : "text-cloud"}`} style={{ fontSize: "calc(var(--fs) * var(--heading-scale, 1))" }}>
+      <Tag className={`text-balance [--fs:2.05rem] sm:[--fs:3.75rem] lg:[--fs:4.5rem] ${dark ? "text-ink" : "text-cloud"}`} style={{ fontSize: "calc(var(--fs) * var(--heading-scale, 1))" }}>
         <span data-tina-field={fields.title}>{title}</span>{accent && <> <span data-tina-field={fields.accent} className={dark ? "text-deep-800" : "text-teal"}>{accent}</span></>}
       </Tag>
     </div>
@@ -42,8 +42,8 @@ export function PageHero({ kicker, title, accent, intro, children }: { kicker: s
       <div className="glow-teal pointer-events-none absolute -right-40 -top-40 h-[640px] w-[640px]" aria-hidden="true" />
       <div className="container-site relative">
         <Kicker className="mb-6">{kicker}</Kicker>
-        <h1 className="text-balance text-5xl sm:text-7xl lg:text-[6.5rem]">{title}{accent && <> <span className="text-teal">{accent}</span></>}</h1>
-        {intro && <div className="mt-8 max-w-2xl text-lg font-light leading-relaxed text-ink-200 sm:text-xl">{intro}</div>}
+        <h1 className="text-balance text-[2.35rem] sm:text-7xl lg:text-[6.5rem]">{title}{accent && <> <span className="text-teal">{accent}</span></>}</h1>
+        {intro && <div className="mt-8 max-w-2xl text-base font-light leading-relaxed text-ink-200 sm:text-xl">{intro}</div>}
         {children}
       </div>
     </section>

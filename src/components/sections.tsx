@@ -42,8 +42,8 @@ export function CalculatorBanner() {
         <CalculatorPreview />
         <div className="relative max-w-xl">
           <div className="mb-6 inline-grid h-14 w-14 place-items-center rounded-2xl bg-ink text-cloud"><Icon name="calc" className="h-8 w-8" /></div>
-          <h2 className="text-ink [--fs:2.4rem] sm:[--fs:3.75rem]" style={{ fontSize: "calc(var(--fs) * var(--heading-scale, 1))" }}><span data-tina-field={tf(c, "title")}>{c.title}</span> <span className="text-deep-800" data-tina-field={tf(c, "accent")}>{c.accent}</span></h2>
-          <p className="mt-5 text-lg text-ink/80" data-tina-field={tf(c, "text")}>{c.text}</p>
+          <h2 className="text-ink [--fs:1.95rem] sm:[--fs:3.75rem]" style={{ fontSize: "calc(var(--fs) * var(--heading-scale, 1))" }}><span data-tina-field={tf(c, "title")}>{c.title}</span> <span className="text-deep-800" data-tina-field={tf(c, "accent")}>{c.accent}</span></h2>
+          <p className="mt-5 text-base text-ink/80 sm:text-lg" data-tina-field={tf(c, "text")}>{c.text}</p>
           <ul className="mt-6 space-y-2 text-[15px] font-medium">
             {c.points.map((t, i) => (
               <li key={i} className="flex items-center gap-3" data-tina-field={tf(c, "points", i)}><span className="grid h-6 w-6 place-items-center rounded-full bg-ink text-xs text-teal" aria-hidden="true">✓</span>{t}</li>
@@ -85,7 +85,7 @@ export function PackageCard({ pkg, detailed = false }: { pkg: Package; detailed?
       {rec && <span data-tina-field={tf(pkg, "recommended")} className="absolute -top-3.5 left-7 rounded-full bg-teal px-4 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-ink">Recommended</span>}
       <h3 className="text-2xl tracking-wide" data-tina-field={tf(pkg, "name")}>{pkg.name}</h3>
       <p className={`mt-2 min-h-[48px] text-sm leading-relaxed ${rec ? "text-teal-100" : "text-ink-300"}`} data-tina-field={tf(pkg, "bestFor")}>{pkg.bestFor}</p>
-      <p className="mt-6"><span className="text-sm font-medium opacity-80">From </span><span className="font-display text-5xl" data-tina-field={tf(pkg, "priceFrom")}>{money(Number(pkg.priceFrom))}</span><span className="text-sm opacity-80">/month</span></p>
+      <p className="mt-6"><span className="text-sm font-medium opacity-80">From </span><span className="font-display text-[2.6rem] sm:text-5xl" data-tina-field={tf(pkg, "priceFrom")}>{money(Number(pkg.priceFrom))}</span><span className="text-sm opacity-80">/month</span></p>
       <ul className={`mt-7 space-y-3 border-t pt-7 text-[15px] ${rec ? "border-white/20" : "border-white/10"}`}>
         {(detailed ? pkg.deliverables : pkg.deliverables.slice(0, 4)).map((f, i) => (
           <li key={i} className="flex gap-3" data-tina-field={tf(pkg, "deliverables", i)}><span className={`mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full text-[11px] font-bold ${rec ? "bg-cloud text-deep" : "bg-teal text-ink"}`} aria-hidden="true">✓</span>{f}</li>
@@ -131,8 +131,8 @@ export function FinalCTA({ title = "Let’s Bring Your Next", accent = "Project 
             <div className="glow-teal pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[900px] -translate-x-1/2 -translate-y-1/2" aria-hidden="true" />
             <div className="relative mx-auto max-w-3xl">
               <Kicker className="mb-6 justify-center">Let’s work together</Kicker>
-              <h2 className="text-balance text-cloud [--fs:2.4rem] sm:[--fs:3.75rem] lg:[--fs:4.5rem]" style={{ fontSize: "calc(var(--fs) * var(--heading-scale, 1))" }}><span data-tina-field={fields.title}>{title}</span> <span className="text-teal" data-tina-field={fields.accent}>{accent}</span></h2>
-              <p className="mx-auto mt-6 max-w-xl text-lg text-ink-200" data-tina-field={fields.text}>{text}</p>
+              <h2 className="text-balance text-cloud [--fs:1.95rem] sm:[--fs:3.75rem] lg:[--fs:4.5rem]" style={{ fontSize: "calc(var(--fs) * var(--heading-scale, 1))" }}><span data-tina-field={fields.title}>{title}</span> <span className="text-teal" data-tina-field={fields.accent}>{accent}</span></h2>
+              <p className="mx-auto mt-6 max-w-xl text-base text-ink-200 sm:text-lg" data-tina-field={fields.text}>{text}</p>
               <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
                 <Button href={bookingHref} arrow field={fields.primary}>{home.finalCta.primaryButton}</Button>
                 <Button href="/contact" variant="outline" field={fields.secondary}>{home.finalCta.secondaryButton}</Button>

@@ -74,7 +74,7 @@ export function Header() {
                 {nav.map((n, i) => (
                   <motion.li key={n.href} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.15 + i * 0.05 }}>
                     <Link href={n.href} aria-current={isActive(n.href) ? "page" : undefined}
-                      className={`flex items-center justify-between border-b border-white/10 py-4 font-display text-[2rem] uppercase ${isActive(n.href) ? "text-teal" : "text-cloud"}`}>
+                      className={`flex items-center justify-between border-b border-white/10 py-3 font-display text-[1.4rem] uppercase sm:py-4 sm:text-[2rem] ${isActive(n.href) ? "text-teal" : "text-cloud"}`}>
                       {n.label}{isActive(n.href) && <span aria-hidden="true" className="text-xl">→</span>}
                     </Link>
                   </motion.li>

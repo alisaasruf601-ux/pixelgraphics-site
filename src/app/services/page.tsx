@@ -35,9 +35,9 @@ export default function ServicesPage() {
                     <div className="group overflow-hidden rounded-card"><DeptVisual icon={d.icon} large className="aspect-[4/3]" /></div>
                   </Reveal>
                   <Reveal delay={0.1}>
-                    <p className="font-display text-6xl text-deep sm:text-7xl" aria-hidden="true">{d.number}</p>
-                    <h2 id={`${d.slug}-h`} className="mt-2 text-balance text-3xl text-cloud sm:text-4xl">{d.title}</h2>
-                    <p className="mt-5 text-lg leading-relaxed text-ink-200">{d.intro}</p>
+                    <p className="font-display text-5xl text-deep sm:text-7xl" aria-hidden="true">{d.number}</p>
+                    <h2 id={`${d.slug}-h`} className="mt-2 text-balance text-[1.6rem] text-cloud sm:text-4xl">{d.title}</h2>
+                    <p className="mt-5 text-base leading-relaxed text-ink-200 sm:text-lg">{d.intro}</p>
                     <h3 className="mt-8 font-sans text-xs font-semibold normal-case tracking-[0.2em] text-teal">WHAT WE OFFER</h3>
                     <ul className="mt-4 grid gap-x-6 gap-y-2.5 sm:grid-cols-2">
                       {d.services.map((s) => <li key={s} className="flex items-center gap-3 text-[15px] text-ink-200"><span className="h-1.5 w-1.5 shrink-0 rounded-full bg-teal" aria-hidden="true" />{s}</li>)}

@@ -37,7 +37,7 @@ export default function PricingPage() {
             <Reveal className="h-full">
               <div className="flex h-full flex-col rounded-panel border border-teal/30 bg-ink-800/60 p-8">
                 <p className="text-sm text-ink-300">{hourly.service}</p>
-                <p className="mt-2"><span className="font-display text-6xl text-teal">{money(hourly.rate)}</span><span className="text-ink-300"> / hour</span></p>
+                <p className="mt-2"><span className="font-display text-5xl text-teal sm:text-6xl">{money(hourly.rate)}</span><span className="text-ink-300"> / hour</span></p>
                 <ul className="mt-6 space-y-2 text-[15px] text-ink-200">
                   <li>Minimum {hourly.minHours} hours per project</li>
                   <li>Rush delivery: +{Math.round(hourly.rushSurcharge * 100)}%</li>
@@ -73,8 +73,8 @@ export default function PricingPage() {
             <div className="grid items-center gap-10 rounded-panel bg-deep-700 p-8 sm:p-12 lg:grid-cols-[1.4fr_1fr] lg:p-16">
               <div>
                 <p className="kicker mb-6 !text-cloud before:!bg-cloud">C · Personal quotation</p>
-                <h2 className="text-balance text-4xl text-cloud sm:text-6xl">Have something different <span className="text-teal">in mind?</span></h2>
-                <p className="mt-6 max-w-xl text-lg text-teal-100">Branding, social media, marketing or something else? Answer a few questions about your project and receive a personal quotation.</p>
+                <h2 className="text-balance text-[1.9rem] text-cloud sm:text-6xl">Have something different <span className="text-teal">in mind?</span></h2>
+                <p className="mt-6 max-w-xl text-base text-teal-100 sm:text-lg">Branding, social media, marketing or something else? Answer a few questions about your project and receive a personal quotation.</p>
               </div>
               <div className="flex flex-col gap-3 lg:items-end">
                 <Button href="/brief" variant="dark" arrow>Request a Custom Quote</Button>

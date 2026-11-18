@@ -24,7 +24,7 @@ export function AboutView() {
                 <span key={i} data-tina-field={tf(l)} className={`block ${l.accent ? "text-teal" : ""}`}>{l.text}</span>
               ))}
             </h2>
-            <div className="space-y-5 text-lg leading-relaxed text-ink-200">
+            <div className="space-y-5 text-base leading-relaxed sm:text-lg text-ink-200">
               {a.intro.paragraphs.map((p, i) => <p key={i} data-tina-field={tf(a.intro, "paragraphs", i)}>{p}</p>)}
             </div>
           </Reveal>
@@ -50,7 +50,7 @@ export function AboutView() {
             <Reveal key={i} delay={i * 0.1} className="h-full">
               <article className={`flex h-full flex-col rounded-panel p-8 sm:p-10 ${i === 1 ? "bg-deep-700" : "card-dark"}`}>
                 <p className={`kicker mb-6 ${i === 1 ? "!text-cloud before:!bg-cloud" : ""}`} data-tina-field={tf(c, "kicker")}>{c.kicker}</p>
-                <h2 className="text-3xl text-cloud lg:min-h-[2lh]" data-tina-field={tf(c, "title")}>{c.title}</h2>
+                <h2 className="text-[1.6rem] text-cloud sm:text-3xl lg:min-h-[2lh]" data-tina-field={tf(c, "title")}>{c.title}</h2>
                 <p className={`mt-5 leading-relaxed ${i === 1 ? "text-teal-100" : "text-ink-300"}`} data-tina-field={tf(c, "text")}>{c.text}</p>
               </article>
             </Reveal>
@@ -81,9 +81,9 @@ export function AboutView() {
           <ol className="grid gap-x-10 gap-y-12 md:grid-cols-2">
             {a.why.items.map((w, i) => (
               <li key={i} className="border-t-2 border-ink pt-6"><Reveal delay={i * 0.06}>
-                <span className="font-display text-5xl text-deep-800">0{i + 1}</span>
+                <span className="font-display text-4xl text-deep-800 sm:text-5xl">0{i + 1}</span>
                 <h3 className="mt-3 text-2xl" data-tina-field={tf(w, "title")}>{w.title}</h3>
-                <p className="mt-3 text-lg leading-relaxed text-ink/80" data-tina-field={tf(w, "text")}>{w.text}</p>
+                <p className="mt-3 text-base leading-relaxed text-ink/80 sm:text-lg" data-tina-field={tf(w, "text")}>{w.text}</p>
               </Reveal></li>
             ))}
           </ol>
