@@ -1,4 +1,4 @@
-import Link from "./LocalLink";
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 type BtnVariant = "primary" | "dark" | "outline" | "outline-dark";

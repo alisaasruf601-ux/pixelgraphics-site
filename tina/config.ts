@@ -17,15 +17,7 @@ const button = (name: string, label: string): TinaField => ({
   type: "object", name, label,
   fields: [text("label", "Button text"), text("link", "Link (e.g. /contact or https://…)")],
 } as TinaField);
-/** Each page has one file per language: English = home.json, Dutch = nl/home.json, etc. */
-const LANGS = ["nl", "pt", "es", "de"];
-const perLang = (name: string) => `{${[name, ...LANGS.map((l) => `${l}/${name}`)].join(",")}}`;
-/** Opens the right language version of the page in the visual editor. */
-const langRouter = (path: string) => ({ document }: { document: { _sys: { relativePath: string } } }) => {
-  const l = document._sys.relativePath.split("/")[0];
-  return LANGS.includes(l) ? `/${l}${path === "/" ? "" : path}` : path;
-};
-const single = { allowedActions: { create: false, delete: false }, router: langRouter("/") };
+const single = { allowedActions: { create: false, delete: false }, router: () => "/" };
 
 export default defineConfig({
   branch: process.env.NEXT_PUBLIC_TINA_BRANCH || process.env.HEAD || process.env.BRANCH || "main",
@@ -36,7 +28,7 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "home", label: "Homepage", path: "content", format: "json", match: { include: perLang("home") }, ui: single,
+        name: "home", label: "Homepage", path: "content", format: "json", match: { include: "home" }, ui: single,
         fields: [
           { type: "object", name: "hero", label: "Top of the page", fields: [
             text("kicker", "Small line above the headline"),
@@ -73,7 +65,7 @@ export default defineConfig({
         ],
       },
       {
-        name: "services", label: "Services", path: "content", format: "json", match: { include: perLang("services") }, ui: single,
+        name: "services", label: "Services", path: "content", format: "json", match: { include: "services" }, ui: single,
         fields: [
           { type: "object", name: "showcase", label: "Homepage service photos (the 6 animated cards)", list: true,
             ui: { itemProps: (i: { title?: string }) => ({ label: i?.title }) },
@@ -94,7 +86,7 @@ export default defineConfig({
         ],
       },
       {
-        name: "pricing", label: "Prices & packages", path: "content", format: "json", match: { include: perLang("pricing") }, ui: single,
+        name: "pricing", label: "Prices & packages", path: "content", format: "json", match: { include: "pricing" }, ui: single,
         fields: [
           { type: "object", name: "hourly", label: "Hourly calculator (graphic design)", fields: [
             text("service", "Service name"),
@@ -119,8 +111,8 @@ export default defineConfig({
         ],
       },
       {
-        name: "about", label: "About page", path: "content", format: "json", match: { include: perLang("about") },
-        ui: { allowedActions: { create: false, delete: false }, router: langRouter("/about") },
+        name: "about", label: "About page", path: "content", format: "json", match: { include: "about" },
+        ui: { allowedActions: { create: false, delete: false }, router: () => "/about" },
         fields: [
           { type: "object", name: "hero", label: "Top of the page", fields: [text("kicker", "Small line"), text("title", "Title (white part)"), text("accent", "Title (teal part)"), area("intro", "Intro text")] },
           { type: "object", name: "intro", label: "Who we are", fields: [

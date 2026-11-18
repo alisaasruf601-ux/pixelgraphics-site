@@ -15,7 +15,6 @@
  */
 import { useEffect, useId, useRef, useState } from "react";
 import { motion, useAnimate } from "framer-motion";
-import { useI18n } from "@/i18n/I18nProvider";
 import { finishIntro, introWillPlay, revealHeaderLogo } from "@/lib/intro";
 import {
   LOGO_COLORS as C, LOCKUP_BOX as LB, SYMBOL_BOX as SB, P_PATH, X_BACK_PATH, X_FRONT_PATH, X_SHADOW, DIVIDER, PIXEL_PATHS, GRAPHICS_PATHS,
@@ -36,7 +35,6 @@ const SYMBOL_CENTER = SB.x + SB.w / 2 - LB.x;            // symbol centre, from 
 const T = { pixel: 0.2, pixelDur: 1.15, bowl: 1.3, xBack: 1.5, xFront: 1.7, shadow: 1.95, sheen: 2.1, shift: 2.35, divider: 2.75, words: 3.05, exit: 4.2 };
 
 export function LogoIntro() {
-  const { t } = useI18n();
   const [show, setShow] = useState(false);
   const [go, setGo] = useState(false);
   const [S, setS] = useState(96); // rendered lockup height in px
@@ -198,7 +196,7 @@ export function LogoIntro() {
 
       <button type="button" tabIndex={-1} onClick={() => exit(true)}
         className="absolute bottom-[max(24px,env(safe-area-inset-bottom))] right-6 rounded-full border border-white/15 px-4 py-2 text-xs font-semibold tracking-[0.15em] text-ink-300 transition hover:border-teal hover:text-teal">
-        {t.intro.skip}
+        SKIP
       </button>
     </div>
   );
