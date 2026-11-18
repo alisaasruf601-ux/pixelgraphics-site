@@ -16,7 +16,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHero kicker="Contact" title="Let’s" accent="talk."
-        intro="Tell us about your business and project. We reply within 1–2 working days — by email, WhatsApp or in an online meeting." />
+        intro="Tell us about your business and project. We reply within 1–2 working days, by email, WhatsApp or in an online meeting." />
       <section className="py-16 sm:py-24">
         <div className="container-site grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
           <aside className="space-y-4" aria-label="Other ways to reach us">

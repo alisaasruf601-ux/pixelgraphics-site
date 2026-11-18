@@ -11,21 +11,24 @@ import homeJson from "../../content/home.json";
 import servicesJson from "../../content/services.json";
 import pricingJson from "../../content/pricing.json";
 import themeJson from "../../content/theme.json";
-import { HOME_QUERY, SERVICES_QUERY, PRICING_QUERY, THEME_QUERY } from "@/lib/tina-queries";
+import aboutJson from "../../content/about.json";
+import { HOME_QUERY, SERVICES_QUERY, PRICING_QUERY, THEME_QUERY, ABOUT_QUERY } from "@/lib/tina-queries";
 import { themeVars, type ThemeData } from "@/config/theme";
 import { googleFontsHref } from "@/config/fonts";
 
 type Home = typeof homeJson;
 type Services = typeof servicesJson;
 type Pricing = typeof pricingJson;
+type About = typeof aboutJson;
 
-type Live = { home: Home; services: Services; pricing: Pricing; theme: ThemeData };
-const Ctx = createContext<Live>({ home: homeJson, services: servicesJson, pricing: pricingJson, theme: themeJson });
+type Live = { home: Home; services: Services; pricing: Pricing; theme: ThemeData; about: About };
+const Ctx = createContext<Live>({ home: homeJson, services: servicesJson, pricing: pricingJson, theme: themeJson, about: aboutJson });
 
 // Stable references: useTina re-initialises whenever `data`/`variables` change identity.
 const HOME = { query: HOME_QUERY, variables: { relativePath: "home.json" }, data: { home: homeJson } };
 const SERVICES = { query: SERVICES_QUERY, variables: { relativePath: "services.json" }, data: { services: servicesJson } };
 const PRICING = { query: PRICING_QUERY, variables: { relativePath: "pricing.json" }, data: { pricing: pricingJson } };
+const ABOUT = { query: ABOUT_QUERY, variables: { relativePath: "about.json" }, data: { about: aboutJson } };
 const THEME = { query: THEME_QUERY, variables: { relativePath: "theme.json" }, data: { theme: themeJson as ThemeData } };
 
 export function LiveContentProvider({ children }: { children: ReactNode }) {
@@ -33,6 +36,7 @@ export function LiveContentProvider({ children }: { children: ReactNode }) {
   const s = useTina(SERVICES);
   const p = useTina(PRICING);
   const t = useTina(THEME);
+  const ab = useTina(ABOUT);
   const theme = t.data.theme;
 
   // Apply font / size / colour choices live (only differs from the saved theme while editing).
@@ -47,7 +51,7 @@ export function LiveContentProvider({ children }: { children: ReactNode }) {
     }
   }, [theme]);
 
-  const value = useMemo(() => ({ home: h.data.home, services: s.data.services, pricing: p.data.pricing, theme }), [h.data, s.data, p.data, theme]);
+  const value = useMemo(() => ({ home: h.data.home, services: s.data.services, pricing: p.data.pricing, theme, about: ab.data.about }), [h.data, s.data, p.data, theme, ab.data]);
   return (
     <Ctx.Provider value={value}>
       {children}

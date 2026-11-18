@@ -13,19 +13,15 @@
       {
         "text": "BE CHOSEN.",
         "accent": true
-      },
-      {
-        "text": "",
-        "accent": true
       }
     ],
-    "intro": "Creative strategy, powerful design and digital marketing solutions for businesses ready to stand out internationally.",
+    "intro": "Design, social media and content strategy for brands that are done blending in. We turn scrollers into followers, and followers into clients.",
     "primaryButton": {
-      "label": "Get a Free Consultation",
+      "label": "Book a free call",
       "link": "/contact?topic=consultation"
     },
     "secondaryButton": {
-      "label": "Explore Services",
+      "label": "See our services",
       "link": "/services"
     },
     "markets": "Based in Suriname | Trusted by brands worldwide"
@@ -40,11 +36,11 @@
   "calculator": {
     "title": "Hourly",
     "accent": "Calculator",
-    "text": "See the price of your graphic design work by the hour — instantly.",
+    "text": "See the price of your graphic design work by the hour, instantly.",
     "points": [
       "Choose the number of hours",
       "See your price update instantly",
-      "Send your request "
+      "Send your request, we confirm before we start"
     ],
     "button": "Calculate Your Price"
   },
@@ -52,7 +48,7 @@
     "kicker": "How we work",
     "title": "Our",
     "accent": "Process",
-    "intro": "A clear, structured approach — fully remote, with you involved at every step.",
+    "intro": "A clear, structured approach. Fully remote, with you involved at every step.",
     "button": "See the full client journey",
     "steps": [
       {

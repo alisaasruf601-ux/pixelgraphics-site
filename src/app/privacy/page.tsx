@@ -6,9 +6,9 @@ export default function Page() {
     <LegalPage title="Privacy" accent="Policy">
       <p>This policy explains how Pixel Graphics collects and uses personal data through this website.</p>
       <h2>What we collect</h2>
-      <ul><li>Details you enter in our forms: name, business name, email, country, phone/WhatsApp number (optional), project information and budget.</li><li>Your project selection when you send an estimate from the price calculator.</li><li>Analytics data (Google Analytics, Meta Pixel) — only if you accept analytics cookies.</li></ul>
+      <ul><li>Details you enter in our forms: name, business name, email, country, phone/WhatsApp number (optional), project information and budget.</li><li>Your project selection when you send an estimate from the price calculator.</li><li>Analytics data (Google Analytics, Meta Pixel), only if you accept analytics cookies.</li></ul>
       <h2>Why we use it</h2>
-      <p>To reply to your inquiry, prepare proposals, schedule meetings, deliver our services and — if you subscribe — send our newsletter. The legal basis is your consent and/or taking steps at your request before entering into a contract.</p>
+      <p>To reply to your inquiry, prepare proposals, schedule meetings, deliver our services and, if you subscribe, send our newsletter. The legal basis is your consent and/or taking steps at your request before entering into a contract.</p>
       <h2>How long we keep it</h2>
       <p>[Add retention periods, e.g. inquiries without follow-up are deleted after 12 months.]</p>
       <h2>Who we share it with</h2>

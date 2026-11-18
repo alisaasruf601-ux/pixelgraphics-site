@@ -222,7 +222,7 @@ export function ServiceShowcase() {
               onPointerMove={onPointerMove}
               onPointerLeave={() => setHover(false)}
               aria-haspopup="dialog"
-              aria-label={`${it.title} — view service details`}
+              aria-label={`${it.title}: view service details`}
               className="showcase-card group relative flex w-full origin-center text-left will-change-transform focus-visible:outline-offset-4 lg:cursor-none"
             >
               <span className="showcase-inner flex w-full">

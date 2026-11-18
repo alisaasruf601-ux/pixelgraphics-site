@@ -111,7 +111,39 @@ export default defineConfig({
         ],
       },
       {
-        name: "site", label: "Contact & social media", path: "content", format: "json", match: { include: "site" }, ui: single,
+        name: "about", label: "About page", path: "content", format: "json", match: { include: "about" },
+        ui: { allowedActions: { create: false, delete: false }, router: () => "/about" },
+        fields: [
+          { type: "object", name: "hero", label: "Top of the page", fields: [text("kicker", "Small line"), text("title", "Title (white part)"), text("accent", "Title (teal part)"), area("intro", "Intro text")] },
+          { type: "object", name: "intro", label: "Who we are", fields: [
+            text("kicker", "Small line above the title"),
+            { type: "object", name: "headline", label: "Title lines", list: true, ui: { itemProps: (i: { text?: string }) => ({ label: i?.text }) },
+              fields: [text("text", "Text"), { type: "boolean", name: "accent", label: "Teal colour" }] },
+            { type: "string", name: "paragraphs", label: "Paragraphs", list: true, ui: { component: "textarea" } } as TinaField,
+            { type: "image", name: "photo", label: "Photo on the right (leave empty for the brand visual)" },
+          ] },
+          { type: "object", name: "cards", label: "Story, mission & vision", list: true, ui: { itemProps: (i: { kicker?: string }) => ({ label: i?.kicker }) },
+            fields: [text("kicker", "Small line"), text("title", "Title"), area("text", "Text")] },
+          { type: "object", name: "values", label: "Values", fields: [
+            text("kicker", "Small line"), text("title", "Title (white part)"), text("accent", "Title (teal part)"), area("intro", "Intro"),
+            { type: "object", name: "items", label: "Values", list: true, ui: { itemProps: (i: { title?: string }) => ({ label: i?.title }) },
+              fields: [text("icon", "Icon", { options: ICONS }), text("title", "Title"), area("text", "Text")] },
+          ] },
+          { type: "object", name: "why", label: "Why Pixel Graphics", fields: [
+            text("kicker", "Small line"), text("title", "Title (dark part)"), text("accent", "Title (green part)"),
+            { type: "object", name: "items", label: "Reasons", list: true, ui: { itemProps: (i: { title?: string }) => ({ label: i?.title }) },
+              fields: [text("title", "Title"), area("text", "Text")] },
+          ] },
+          { type: "object", name: "remote", label: "Remote approach", fields: [
+            text("kicker", "Small line"), text("title", "Title (white part)"), text("accent", "Title (teal part)"), area("intro", "Intro"),
+            { type: "object", name: "items", label: "Cards", list: true, ui: { itemProps: (i: { title?: string }) => ({ label: i?.title }) },
+              fields: [text("icon", "Icon", { options: ICONS }), text("title", "Title"), area("text", "Text")] },
+            text("button", "Button text"),
+          ] },
+        ],
+      },
+      {
+        name: "site", label: "Contact & social media", path: "content", format: "json", match: { include: "site" }, ui: { allowedActions: { create: false, delete: false } },
         fields: [
           { type: "object", name: "contact", label: "Contact", fields: [text("email", "Business email"), text("whatsapp", "WhatsApp number (digits only, with country code)")] },
           text("bookingUrl", "Booking link (Calendly etc.) — leave empty to use the website’s booking form"),

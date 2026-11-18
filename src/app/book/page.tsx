@@ -13,7 +13,7 @@ export default function BookPage() {
   return (
     <>
       <PageHero kicker="Book a meeting" title="Let’s meet" accent="online."
-        intro="Choose two moments that suit you. We’ll confirm one of them by email with the meeting link — in your own time zone." />
+        intro="Choose two moments that suit you. We’ll confirm one of them by email with the meeting link, in your own time zone." />
       <section className="py-16 sm:py-24">
         <div className="container-site grid gap-10 lg:grid-cols-[1fr_1.6fr] lg:gap-16">
           <ul className="space-y-6">

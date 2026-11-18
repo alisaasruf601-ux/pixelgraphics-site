@@ -22,7 +22,7 @@ export function Footer() {
           <div>
             <Logo size={44} />
             <p className="mt-6 font-display text-xl uppercase text-cloud">Creative Without <span className="text-teal">Borders.</span></p>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-300">A remote-first creative and digital marketing studio working with clients in the Netherlands, Suriname, Brazil and worldwide.</p>
+            <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-300">A fully remote creative studio based in Suriname, working with brands around the world.</p>
           </div>
           <FooterCol title="Quick links" links={nav.map((n) => ({ label: n.label, href: n.href }))} />
           <FooterCol title="Services" links={footerServices} />

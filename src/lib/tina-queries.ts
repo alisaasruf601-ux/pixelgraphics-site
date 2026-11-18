@@ -19,3 +19,11 @@ export const PRICING_QUERY = `query pricing($relativePath: String!) { pricing(re
 export const THEME_QUERY = `query theme($relativePath: String!) { theme(relativePath: $relativePath) {
   headingFont bodyFont accentColor headingSize textSize
 } }`;
+export const ABOUT_QUERY = `query about($relativePath: String!) { about(relativePath: $relativePath) {
+  hero { kicker title accent intro }
+  intro { kicker headline { text accent } paragraphs photo }
+  cards { kicker title text }
+  values { kicker title accent intro items { icon title text } }
+  why { kicker title accent items { title text } }
+  remote { kicker title accent intro items { icon title text } button }
+} }`;

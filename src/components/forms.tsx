@@ -16,7 +16,7 @@ export function useSubmit(endpoint: string) {
       setErrors(json.errors ?? {}); setMessage(json.message || "Something went wrong. Please try again."); setStatus("error");
       return false;
     } catch {
-      setMessage("Network error — check your connection and try again."); setStatus("error"); return false;
+      setMessage("Network error. Check your connection and try again."); setStatus("error"); return false;
     }
   }, [endpoint]);
   const reset = () => { setStatus("idle"); setErrors({}); setMessage(""); };

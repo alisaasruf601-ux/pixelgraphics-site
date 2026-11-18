@@ -12,7 +12,7 @@ export const site = {
   positioning: "Creative Without Borders.",
   tagline: "Design. Market. Grow Your Brand.",
   description:
-    "Pixel Graphics is an independent, remote-first creative and digital marketing studio for branding, graphic design, social media, digital marketing and motion — working with clients in the Netherlands, Suriname, Brazil and worldwide.",
+    "Pixel Graphics is an independent, remote-first creative and digital marketing studio based in Suriname, creating branding, graphic design, social media and content strategy for brands worldwide.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   markets: ["Netherlands", "Suriname", "Brazil", "Worldwide"],
 

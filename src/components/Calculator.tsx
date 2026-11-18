@@ -27,7 +27,7 @@ export function Calculator() {
         {/* 1. Work type */}
         <section className="rounded-panel border border-white/10 bg-ink-800/50 p-6 sm:p-8" aria-labelledby="calc-kind">
           <StepLabel n={1} id="calc-kind">What do you need designed?</StepLabel>
-          <p className="mt-2 text-sm text-ink-300">Optional — helps us plan your project.</p>
+          <p className="mt-2 text-sm text-ink-300">Optional. Helps us plan your project.</p>
           <div className="mt-5 flex flex-wrap gap-2">
             {hourly.examples.map((k) => (
               <button key={k} type="button" aria-pressed={kinds.includes(k)} onClick={() => toggleKind(k)} className={`chip ${kinds.includes(k) ? "chip-on" : ""}`}>{k}</button>
@@ -38,7 +38,7 @@ export function Calculator() {
         {/* 2. Hours */}
         <section className="rounded-panel border border-white/10 bg-ink-800/50 p-6 sm:p-8" aria-labelledby="calc-hours">
           <StepLabel n={2} id="calc-hours">How many hours?</StepLabel>
-          <p className="mt-2 text-sm text-ink-300">Minimum {hourly.minHours} hours. Not sure? Pick a size — we confirm the hours with you before we start.</p>
+          <p className="mt-2 text-sm text-ink-300">Minimum {hourly.minHours} hours. Not sure? Pick a size and we confirm the hours with you before we start.</p>
           <div className="mt-6 flex items-center gap-4">
             <button type="button" onClick={() => setH(hours - 1)} disabled={hours <= hourly.minHours} aria-label="One hour less"
               className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-white/15 text-2xl text-cloud transition hover:border-teal hover:text-teal disabled:opacity-30">−</button>

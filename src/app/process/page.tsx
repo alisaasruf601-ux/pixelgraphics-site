@@ -7,7 +7,7 @@ import { bookingHref } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Our Process",
-  description: "How a project with Pixel Graphics works — from your first inquiry to final delivery, fully online.",
+  description: "How a project with Pixel Graphics works, from your first inquiry to final delivery, fully online.",
   alternates: { canonical: "/process" },
 };
 
@@ -20,11 +20,11 @@ const journey: { title: string; icon: IconKey; text: string; you: string; link?:
   { title: "Creative development", icon: "pen", text: "We research, design and produce your work, sharing progress at agreed moments.", you: "Stay available for quick questions." },
   { title: "Feedback and revisions", icon: "eye", text: "You review the work and send consolidated feedback. We refine within the agreed revision rounds.", you: "Collect feedback from your team in one round." },
   { title: "Final approval", icon: "check", text: "Once everything is right, you give final approval of the designs.", you: "Approve the final versions in writing." },
-  { title: "Delivery", icon: "handshake", text: "We deliver all final files in the agreed formats, ready to use online and in print.", you: "Download your files — and start growing." },
+  { title: "Delivery", icon: "handshake", text: "We deliver all final files in the agreed formats, ready to use online and in print.", you: "Download your files and start growing." },
 ];
 
 const remote: { icon: IconKey; title: string; text: string }[] = [
-  { icon: "calendar", title: "Meetings online", text: "Google Meet, Zoom, Microsoft Teams or a WhatsApp call — whatever suits you." },
+  { icon: "calendar", title: "Meetings online", text: "Google Meet, Zoom, Microsoft Teams or a WhatsApp call, whatever suits you." },
   { icon: "doc", title: "One shared workspace", text: "Briefs, drafts and final files are shared in one organised online folder." },
   { icon: "clock", title: "Your time zone", text: "Meetings and deadlines are planned in your local time." },
   { icon: "chat", title: "Clear communication", text: "Regular updates by email or WhatsApp, so you always know the status." },
@@ -34,7 +34,7 @@ export default function ProcessPage() {
   return (
     <>
       <PageHero kicker="Our process" title="From first message" accent="to final files."
-        intro="A clear nine-step journey, run fully online. You always know what happens next — and what we need from you." />
+        intro="A clear nine-step journey, run fully online. You always know what happens next and what we need from you." />
 
       <section className="py-20 sm:py-28" aria-labelledby="journey-h">
         <div className="container-site">

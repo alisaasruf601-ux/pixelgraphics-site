@@ -42,7 +42,7 @@ export const packageTerms: string[] = data.packageTerms;
 /* ------------------------------------------------------------------ */
 
 export const purchaseOptions = [
-  { key: "A", title: "Graphic design by the hour", text: "Flyers, posts, brochures and more — calculate your price per hour instantly.", href: "#hourly", cta: "See hourly rate" },
+  { key: "A", title: "Graphic design by the hour", text: "Flyers, posts, brochures and more. Calculate your price per hour instantly.", href: "#hourly", cta: "See hourly rate" },
   { key: "B", title: "Monthly service packages", text: "Ongoing design, social media and marketing support for one monthly fee.", href: "#packages", cta: "Compare packages" },
   { key: "C", title: "Personal quotation", text: "Branding, social media, marketing or something else? Answer a few questions and get a quote.", href: "#custom-quote", cta: "Request a quote" },
 ] as const;

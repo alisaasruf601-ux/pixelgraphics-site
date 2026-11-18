@@ -27,7 +27,7 @@ export function BookingForm() {
       <SelectField name="time1" label="Preferred time" required options={times} error={errors.time1} />
       <TextField name="date2" type="date" label="Alternative date" min={minDate} error={errors.date2} />
       <SelectField name="time2" label="Alternative time" options={times} error={errors.time2} />
-      <TextField key={tz} name="timezone" label="Your time zone" required defaultValue={tz} hint="Detected automatically — change it if needed." className="sm:col-span-2" error={errors.timezone} />
+      <TextField key={tz} name="timezone" label="Your time zone" required defaultValue={tz} hint="Detected automatically. Change it if needed." className="sm:col-span-2" error={errors.timezone} />
       <TextArea name="notes" label="Anything we should prepare?" rows={4} className="sm:col-span-2" error={errors.notes} />
       <div className="sm:col-span-2"><Consent error={errors.consent} /></div>
       <div className="sm:col-span-2"><FormError message={status === "error" ? message : ""} /></div>

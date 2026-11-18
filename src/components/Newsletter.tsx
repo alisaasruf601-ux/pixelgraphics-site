@@ -17,7 +17,7 @@ export function Newsletter() {
           {status === "loading" ? "…" : "→"}</button>
       </div>
       <p id="nl-status" role="status" className={`mt-2 min-h-[1.25rem] text-sm ${status === "error" ? "text-red-300" : "text-teal"}`}>
-        {status === "success" ? "Thanks — you're subscribed." : errors.email || (status === "error" ? message : "")}
+        {status === "success" ? "Thanks, you're subscribed." : errors.email || (status === "error" ? message : "")}
       </p>
     </form>
   );

@@ -60,7 +60,7 @@ export default function PricingPage() {
                 <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                   {hourly.examples.map((e) => <li key={e} className="flex items-center gap-3 text-[15px] text-ink-200"><span className="h-1.5 w-1.5 shrink-0 rounded-full bg-teal" aria-hidden="true" />{e}</li>)}
                 </ul>
-                <p className="mt-8 border-t border-white/10 pt-6 text-sm leading-relaxed text-ink-300">Branding, social media, marketing and other services are not charged by the hour — they are quoted personally. <a href="#custom-quote" className="font-semibold text-teal underline underline-offset-4">Request a quote</a></p>
+                <p className="mt-8 border-t border-white/10 pt-6 text-sm leading-relaxed text-ink-300">Branding, social media, marketing and other services are not charged by the hour. They are quoted personally. <a href="#custom-quote" className="font-semibold text-teal underline underline-offset-4">Request a quote</a></p>
               </div>
             </Reveal>
           </div>

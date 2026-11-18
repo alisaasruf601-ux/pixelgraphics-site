@@ -1,0 +1,9 @@
+node_modules
+.next
+.data
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+*.mp4
+/public/admin
+/tina/__generated__

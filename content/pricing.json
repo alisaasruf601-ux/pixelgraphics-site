@@ -28,29 +28,35 @@
       "name": "Starter",
       "priceFrom": 200,
       "period": "month",
-      "bestFor": "Small businesses that need a consistent, professional social media presence.",
+      "recommended": false,
+      "bestFor": "For small businesses that need a consistent, professional social media presence.",
       "included": [
-        "Graphic design",
-        "Social media content",
-        "Content planning"
+        "Social media design",
+        "Content planning",
+        "Community management",
+        "Paid boosts"
       ],
       "deliverables": [
-        "Up to 8 social media post designs per month",
-        "Monthly content calendar",
-        "Captions for designed posts",
-        "Management of 1 social media platform"
+        "6 social media post designs per month",
+        "Content calendar, made and filled in for you",
+        "Captions and hashtags",
+        "Scheduling and posting (we also post your own visuals)",
+        "Community management: we answer your DMs and comments",
+        "1 boosted post ($10 ad budget included)",
+        "2 revision rounds per design",
+        "Platforms: Instagram, Facebook, LinkedIn"
       ],
       "revisions": "2 revision rounds per design",
-      "duration": "Monthly, delivered in weekly batches",
+      "duration": "Monthly",
       "extras": [
-        "Additional post designs",
-        "Story designs",
+        "Extra post designs",
+        "Extra boosted posts",
         "Extra platform"
       ],
       "limitations": [
-        "Advertising budget (ad spend) not included",
-        "Website design not included — available as a separate service",
-        "Photography and video shoots not included"
+        "Extra ad budget above the included boosts is paid by the client",
+        "Photography and video shoots are not included",
+        "Website design is not included"
       ]
     },
     {
@@ -59,32 +65,35 @@
       "priceFrom": 350,
       "period": "month",
       "recommended": true,
-      "bestFor": "Growing brands ready to market actively across more channels.",
+      "bestFor": "For growing brands ready to show up more often and reach more people.",
       "included": [
-        "Graphic design",
-        "Social media management",
+        "Social media design",
         "Content planning",
-        "Digital marketing"
+        "Community management",
+        "Paid boosts"
       ],
       "deliverables": [
-        "Up to 12 social media post or carousel designs per month",
-        "Up to 4 story designs per month",
-        "Monthly content calendar with captions and hashtag research",
-        "Scheduling on up to 2 social media platforms",
-        "1 additional graphic design item per month (e.g. flyer or banner)",
-        "Monthly performance report"
+        "12 social media post designs per month",
+        "4 story designs per month",
+        "Content calendar, made and filled in for you",
+        "Captions and hashtags",
+        "Scheduling and posting (we also post your own visuals)",
+        "Community management: we answer your DMs and comments",
+        "2 boosted posts ($10 ad budget each, included)",
+        "2 revision rounds per design",
+        "Platforms: Instagram, Facebook, LinkedIn"
       ],
       "revisions": "2 revision rounds per design",
-      "duration": "Monthly, delivered in weekly batches",
+      "duration": "Monthly",
       "extras": [
-        "Ad creatives",
-        "Short animations",
+        "Extra post designs",
+        "Extra boosted posts",
         "Extra platform"
       ],
       "limitations": [
-        "Advertising budget (ad spend) not included",
-        "Website design not included — available as a separate service",
-        "Photography and video shoots not included"
+        "Extra ad budget above the included boosts is paid by the client",
+        "Photography and video shoots are not included",
+        "Website design is not included"
       ]
     },
     {
@@ -92,38 +101,42 @@
       "name": "Premium",
       "priceFrom": 550,
       "period": "month",
-      "bestFor": "Established businesses that want strategy, content and campaigns handled together.",
+      "recommended": false,
+      "bestFor": "For established brands that want their social media fully handled.",
       "included": [
-        "Brand support",
-        "Social media management",
-        "Digital marketing",
-        "Campaign support"
+        "Social media design",
+        "Content planning",
+        "Community management",
+        "Paid boosts"
       ],
       "deliverables": [
-        "Up to 16 social media post or carousel designs per month",
-        "Up to 8 story designs per month",
-        "Up to 2 short social media animations per month",
-        "Scheduling on up to 3 social media platforms",
-        "Advertising creatives for 1 campaign per month",
-        "Monthly report and 30-minute online strategy call"
+        "16 social media post designs per month",
+        "8 story designs per month",
+        "Content calendar, made and filled in for you",
+        "Captions and hashtags",
+        "Scheduling and posting (we also post your own visuals)",
+        "Community management: we answer your DMs and comments",
+        "5 boosted posts ($10 ad budget each, included)",
+        "3 revision rounds per design",
+        "Platforms: Instagram, Facebook, LinkedIn, TikTok and more"
       ],
       "revisions": "3 revision rounds per design",
-      "duration": "Monthly, delivered in weekly batches",
+      "duration": "Monthly",
       "extras": [
-        "Campaign strategy",
-        "Promotional video",
-        "Brand refresh"
+        "Extra post designs",
+        "Extra boosted posts",
+        "Extra platform"
       ],
       "limitations": [
-        "Advertising budget (ad spend) not included",
-        "Website design not included — available as a separate service",
-        "Photography and video shoots not included"
+        "Extra ad budget above the included boosts is paid by the client",
+        "Photography and video shoots are not included",
+        "Website design is not included"
       ]
     }
   ],
   "packageTerms": [
-    "Prices are starting prices in US dollars, billed monthly.",
-    "Unused deliverables do not carry over to the next month.",
-    "Work outside the agreed scope is quoted separately before we start."
+    "Prices in US dollars, billed monthly.",
+    "Unused posts do not carry over to the next month.",
+    "Work outside the package is quoted separately before we start."
   ]
 }

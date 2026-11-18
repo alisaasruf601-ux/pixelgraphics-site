@@ -35,7 +35,7 @@ export function Header() {
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled || open ? "border-b border-white/5 bg-ink/85 backdrop-blur-xl" : "bg-transparent"}`}>
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-teal focus:px-4 focus:py-2 focus:text-ink">Skip to content</a>
       <div className={`container-site flex items-center justify-between transition-all duration-300 ${scrolled ? "h-[72px]" : "h-[88px]"}`}>
-        <Link href="/" aria-label="Pixel Graphics — home" className="shrink-0"><span data-site-logo className="flex"><Logo size={scrolled ? 34 : 40} /></span></Link>
+        <Link href="/" aria-label="Pixel Graphics home" className="shrink-0"><span data-site-logo className="flex"><Logo size={scrolled ? 34 : 40} /></span></Link>
         <nav aria-label="Main" className="hidden lg:block">
           <ul className="flex items-center gap-8 xl:gap-10">
             {nav.map((n) => (
