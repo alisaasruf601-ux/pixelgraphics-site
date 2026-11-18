@@ -50,7 +50,7 @@ export function AboutView() {
             <Reveal key={i} delay={i * 0.1} className="h-full">
               <article className={`flex h-full flex-col rounded-panel p-8 sm:p-10 ${i === 1 ? "bg-deep-700" : "card-dark"}`}>
                 <p className={`kicker mb-6 ${i === 1 ? "!text-cloud before:!bg-cloud" : ""}`} data-tina-field={tf(c, "kicker")}>{c.kicker}</p>
-                <h2 className="text-3xl text-cloud" data-tina-field={tf(c, "title")}>{c.title}</h2>
+                <h2 className="text-3xl text-cloud lg:min-h-[2lh]" data-tina-field={tf(c, "title")}>{c.title}</h2>
                 <p className={`mt-5 leading-relaxed ${i === 1 ? "text-teal-100" : "text-ink-300"}`} data-tina-field={tf(c, "text")}>{c.text}</p>
               </article>
             </Reveal>
