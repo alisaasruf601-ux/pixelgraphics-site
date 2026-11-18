@@ -21,7 +21,7 @@ export default function PricingPage() {
             <li key={o.key}>
               <a href={o.href} className="group flex h-full flex-col rounded-card border border-white/10 bg-ink-800/70 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-teal/50">
                 <span className="grid h-10 w-10 place-items-center rounded-full bg-teal font-display text-ink">{o.key}</span>
-                <span className="mt-5 font-display text-xl uppercase text-cloud">{o.title}</span>
+                <span className="mt-5 font-display text-xl uppercase text-cloud md:min-h-[2lh]">{o.title}</span>
                 <span className="mt-2 flex-1 text-[15px] text-ink-300">{o.text}</span>
                 <span className="mt-5 text-sm font-semibold text-teal">{o.cta} <span aria-hidden="true" className="inline-block transition group-hover:translate-x-1">→</span></span>
               </a>
