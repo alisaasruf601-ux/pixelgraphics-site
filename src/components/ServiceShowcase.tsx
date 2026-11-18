@@ -12,7 +12,8 @@
  * cards simply stay in the grid and the hero shows the static illustration instead.
  */
 import { useCallback, useEffect, useRef, useState } from "react";
-import Link from "next/link";
+import Link from "./LocalLink";
+import { useI18n } from "@/i18n/I18nProvider";
 import { AnimatePresence, motion, useMotionValue, useSpring } from "framer-motion";
 import { type Department } from "@/config/services";
 import { ServicePanel, ServiceImage } from "./ServicePanel";
@@ -39,6 +40,7 @@ type Geo = { dx: number; dy: number; r: number; s: number }[];
 
 export function ServiceShowcase() {
   const { home, services } = useLive();
+  const { t } = useI18n();
   const showcase = services.showcase;
   const departments = services.departments as Department[];
   const items = showcase
@@ -222,7 +224,7 @@ export function ServiceShowcase() {
               onPointerMove={onPointerMove}
               onPointerLeave={() => setHover(false)}
               aria-haspopup="dialog"
-              aria-label={`${it.title}: view service details`}
+              aria-label={`${it.title}: ${t.showcase.view}`}
               className="showcase-card group relative flex w-full origin-center text-left will-change-transform focus-visible:outline-offset-4 lg:cursor-none"
             >
               <span className="showcase-inner flex w-full">
@@ -246,11 +248,11 @@ export function ServiceShowcase() {
 
       {others.length > 0 && (
         <p className="mt-10 flex flex-wrap items-center gap-x-3 gap-y-3 text-sm text-ink-300 sm:mt-12">
-          <span>Also from our studio:</span>
+          <span>{t.showcase.also}</span>
           {others.map((d) => (
             <Link key={d.slug} href={`/services#${d.slug}`} className="chip">{d.shortTitle} <span aria-hidden="true">→</span></Link>
           ))}
-          <Link href="/services" className="font-semibold text-teal underline underline-offset-4">All services</Link>
+          <Link href="/services" className="font-semibold text-teal underline underline-offset-4">{t.cards.all}</Link>
         </p>
       )}
 
@@ -262,7 +264,7 @@ export function ServiceShowcase() {
             <motion.span initial={{ scale: 0.4, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.4, opacity: 0 }}
               transition={{ type: "spring", stiffness: 420, damping: 28 }}
               className="flex items-center gap-2 whitespace-nowrap rounded-full bg-teal px-4 py-2.5 text-sm font-semibold text-ink shadow-[0_10px_30px_-8px_rgba(105,201,202,.7)]">
-              <span className="text-base leading-none">+</span> View service
+              <span className="text-base leading-none">+</span> {t.showcase.view}
             </motion.span>
           )}
         </AnimatePresence>

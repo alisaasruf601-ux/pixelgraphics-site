@@ -1,0 +1,146 @@
+{
+  "showcase": [
+    {
+      "title": "Branding & visuelle Identität",
+      "image": "/uploads/service-branding.webp",
+      "slug": "branding"
+    },
+    {
+      "title": "Marketing & Werbung",
+      "slug": "marketing-advertising",
+      "image": "/uploads/service-marketing-advertising.webp"
+    },
+    {
+      "title": "Social-Media-Design",
+      "slug": "social-media-design",
+      "image": "/uploads/service-social-media-design.webp"
+    },
+    {
+      "title": "Verpackungsdesign",
+      "slug": "packaging",
+      "image": "/uploads/service-packaging.webp"
+    },
+    {
+      "title": "Editorial- & Printdesign",
+      "slug": "editorial-print",
+      "image": "/uploads/service-editorial-print.webp"
+    },
+    {
+      "title": "Social-Media-Management",
+      "slug": "social-media-management",
+      "image": "/uploads/service-social-media-management.webp"
+    }
+  ],
+  "departments": [
+    {
+      "title": "Branding & visuelle Identität",
+      "shortTitle": "Branding & Identität",
+      "number": "01",
+      "icon": "brand",
+      "summary": "Deine Marke ist ein erster Eindruck, den du nie wiederholen kannst. Wir gestalten Logos und komplette Identitäten, die Menschen sofort erkennen und denen sie schneller vertrauen.",
+      "intro": "Deine Marke ist ein erster Eindruck, den du nie wiederholen kannst. Wir gestalten Logos und komplette Identitäten, die Menschen sofort erkennen und denen sie schneller vertrauen.",
+      "services": [
+        "Logodesign",
+        "Markenidentität",
+        "Markenrichtlinien",
+        "Visitenkarten & Geschäftsausstattung",
+        "Markenanwendungen"
+      ],
+      "deliverables": [],
+      "slug": "branding"
+    },
+    {
+      "title": "Marketing & Werbung",
+      "shortTitle": "Marketing & Werbung",
+      "number": "02",
+      "icon": "marketing",
+      "summary": "Flyer, Poster, Plakate und Kampagnen mit einem Ziel: Menschen sollen anhalten, hinschauen und handeln.",
+      "intro": "Flyer, Poster, Plakate und Kampagnen mit einem Ziel: Menschen sollen anhalten, hinschauen und handeln.",
+      "services": [
+        "Flyer & Poster",
+        "Broschüren",
+        "Werbekampagnen",
+        "Werbematerialien",
+        "Plakate & Banner",
+        "Marketingmaterialien"
+      ],
+      "deliverables": [],
+      "slug": "marketing-advertising"
+    },
+    {
+      "title": "Social-Media-Design",
+      "shortTitle": "Social-Media-Design",
+      "number": "03",
+      "icon": "social",
+      "summary": "Posts, Stories und Karussells, die beim Scrollen auffallen und deinen Feed professionell, konsistent und folgenswert machen.",
+      "intro": "Posts, Stories und Karussells, die beim Scrollen auffallen und deinen Feed professionell, konsistent und folgenswert machen.",
+      "services": [
+        "Instagram-Posts",
+        "Instagram-Stories",
+        "Social-Media-Karussells",
+        "Facebook-Grafiken",
+        "Social-Media-Vorlagen",
+        "Digitale Werbemittel"
+      ],
+      "deliverables": [],
+      "slug": "social-media-design"
+    },
+    {
+      "title": "Verpackungsdesign",
+      "shortTitle": "Verpackungsdesign",
+      "number": "04",
+      "icon": "packaging",
+      "summary": "Verpackungen, die im Regal verkaufen. Boxen, Etiketten und Flaschen, die deine Markengeschichte erzählen, bevor jemand ein Wort liest.",
+      "intro": "Verpackungen, die im Regal verkaufen. Boxen, Etiketten und Flaschen, die deine Markengeschichte erzählen, bevor jemand ein Wort liest.",
+      "services": [
+        "Produktverpackungen",
+        "Produktetiketten",
+        "Boxdesign",
+        "Flaschen- & Behälterdesign",
+        "Verpackungen für Lebensmittel & Getränke",
+        "Kosmetikverpackungen"
+      ],
+      "deliverables": [],
+      "slug": "packaging"
+    },
+    {
+      "title": "Editorial- & Printdesign",
+      "shortTitle": "Editorial & Print",
+      "number": "05",
+      "icon": "editorial",
+      "summary": "Magazine, Speisekarten, Kataloge und Unternehmensprofile, so gestaltet, dass man sie wirklich gern liest.",
+      "intro": "Magazine, Speisekarten, Kataloge und Unternehmensprofile, so gestaltet, dass man sie wirklich gern liest.",
+      "services": [
+        "Magazine",
+        "Kataloge",
+        "Unternehmensprofile",
+        "Speisekarten",
+        "Bücher & E-Books",
+        "Berichte & Publikationen"
+      ],
+      "deliverables": [],
+      "slug": "editorial-print"
+    },
+    {
+      "title": "Social-Media-Management",
+      "shortTitle": "Social-Media-Management",
+      "number": "06",
+      "icon": "management",
+      "summary": "Wir planen, schreiben, gestalten und veröffentlichen deine Inhalte, damit deine Kanäle aktiv und markengerecht bleiben, während du dich auf dein Geschäft konzentrierst.",
+      "intro": "Wir planen, schreiben, gestalten und veröffentlichen deine Inhalte, damit deine Kanäle aktiv und markengerecht bleiben, während du dich auf dein Geschäft konzentrierst.",
+      "services": [
+        "Social-Media-Strategie",
+        "Content-Planung",
+        "Social-Media-Grafiken",
+        "Copywriting & Captions",
+        "Content-Planung & Veröffentlichung",
+        "Instagram-Betreuung",
+        "Facebook-Betreuung",
+        "TikTok-Betreuung",
+        "LinkedIn-Betreuung"
+      ],
+      "deliverables": [],
+      "slug": "social-media-management"
+    }
+  ]
+}

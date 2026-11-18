@@ -1,0 +1,142 @@
+{
+  "hourly": {
+    "service": "Diseño gráfico",
+    "department": "graphic-design",
+    "rate": 3.5,
+    "minHours": 4,
+    "maxHours": 200,
+    "rushSurcharge": 0.25,
+    "quickPicks": [
+      "4",
+      "8",
+      "16",
+      "24",
+      "40"
+    ],
+    "examples": [
+      "Flyers & carteles",
+      "Publicaciones para redes sociales",
+      "Folletos & menús",
+      "Presentaciones & pitch decks",
+      "Arte para empaques",
+      "Archivos listos para imprimir"
+    ]
+  },
+  "packages": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "priceFrom": 200,
+      "period": "month",
+      "recommended": false,
+      "bestFor": "Para pequeñas empresas que necesitan una presencia en redes sociales coherente y profesional.",
+      "included": [
+        "Diseño para redes sociales",
+        "Planificación de contenido",
+        "Gestión de comunidad",
+        "Promociones pagadas"
+      ],
+      "deliverables": [
+        "6 diseños de publicaciones al mes",
+        "Calendario de contenido, creado y completado para ti",
+        "Textos y hashtags",
+        "Programación y publicación (también publicamos tus propias imágenes)",
+        "Gestión de comunidad: respondemos tus mensajes directos y comentarios",
+        "1 publicación promocionada (US$10 de presupuesto publicitario incluidos)",
+        "2 rondas de revisión por diseño",
+        "Plataformas: Instagram, Facebook, LinkedIn"
+      ],
+      "revisions": "2 rondas de revisión por diseño",
+      "duration": "Mensual",
+      "extras": [
+        "Diseños de publicaciones extra",
+        "Publicaciones promocionadas extra",
+        "Plataforma extra"
+      ],
+      "limitations": [
+        "El presupuesto publicitario adicional a las promociones incluidas lo paga el cliente",
+        "Las sesiones de fotos y video no están incluidas",
+        "El diseño web no está incluido"
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "priceFrom": 350,
+      "period": "month",
+      "recommended": true,
+      "bestFor": "Para marcas en crecimiento listas para aparecer más a menudo y llegar a más personas.",
+      "included": [
+        "Diseño para redes sociales",
+        "Planificación de contenido",
+        "Gestión de comunidad",
+        "Promociones pagadas"
+      ],
+      "deliverables": [
+        "12 diseños de publicaciones al mes",
+        "4 diseños de stories al mes",
+        "Calendario de contenido, creado y completado para ti",
+        "Textos y hashtags",
+        "Programación y publicación (también publicamos tus propias imágenes)",
+        "Gestión de comunidad: respondemos tus mensajes directos y comentarios",
+        "2 publicaciones promocionadas (US$10 de presupuesto publicitario cada una, incluidos)",
+        "2 rondas de revisión por diseño",
+        "Plataformas: Instagram, Facebook, LinkedIn"
+      ],
+      "revisions": "2 rondas de revisión por diseño",
+      "duration": "Mensual",
+      "extras": [
+        "Diseños de publicaciones extra",
+        "Publicaciones promocionadas extra",
+        "Plataforma extra"
+      ],
+      "limitations": [
+        "El presupuesto publicitario adicional a las promociones incluidas lo paga el cliente",
+        "Las sesiones de fotos y video no están incluidas",
+        "El diseño web no está incluido"
+      ]
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "priceFrom": 550,
+      "period": "month",
+      "recommended": false,
+      "bestFor": "Para marcas consolidadas que quieren sus redes sociales totalmente gestionadas.",
+      "included": [
+        "Diseño para redes sociales",
+        "Planificación de contenido",
+        "Gestión de comunidad",
+        "Promociones pagadas"
+      ],
+      "deliverables": [
+        "16 diseños de publicaciones al mes",
+        "8 diseños de stories al mes",
+        "Calendario de contenido, creado y completado para ti",
+        "Textos y hashtags",
+        "Programación y publicación (también publicamos tus propias imágenes)",
+        "Gestión de comunidad: respondemos tus mensajes directos y comentarios",
+        "5 publicaciones promocionadas (US$10 de presupuesto publicitario cada una, incluidos)",
+        "3 rondas de revisión por diseño",
+        "Plataformas: Instagram, Facebook, LinkedIn, TikTok y más"
+      ],
+      "revisions": "3 rondas de revisión por diseño",
+      "duration": "Mensual",
+      "extras": [
+        "Diseños de publicaciones extra",
+        "Publicaciones promocionadas extra",
+        "Plataforma extra"
+      ],
+      "limitations": [
+        "El presupuesto publicitario adicional a las promociones incluidas lo paga el cliente",
+        "Las sesiones de fotos y video no están incluidas",
+        "El diseño web no está incluido"
+      ]
+    }
+  ],
+  "packageTerms": [
+    "Precios en dólares estadounidenses, facturados mensualmente.",
+    "Las publicaciones no usadas no pasan al mes siguiente.",
+    "El trabajo fuera del paquete se presupuesta aparte antes de empezar."
+  ]
+}

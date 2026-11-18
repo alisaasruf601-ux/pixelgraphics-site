@@ -1,0 +1,142 @@
+{
+  "hourly": {
+    "service": "Grafikdesign",
+    "department": "graphic-design",
+    "rate": 3.5,
+    "minHours": 4,
+    "maxHours": 200,
+    "rushSurcharge": 0.25,
+    "quickPicks": [
+      "4",
+      "8",
+      "16",
+      "24",
+      "40"
+    ],
+    "examples": [
+      "Flyer & Poster",
+      "Social-Media-Posts",
+      "Broschüren & Speisekarten",
+      "Präsentationen & Pitch Decks",
+      "Verpackungsgestaltung",
+      "Druckfertige Dateien"
+    ]
+  },
+  "packages": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "priceFrom": 200,
+      "period": "month",
+      "recommended": false,
+      "bestFor": "Für kleine Unternehmen, die einen konsistenten, professionellen Auftritt in den sozialen Medien brauchen.",
+      "included": [
+        "Social-Media-Design",
+        "Content-Planung",
+        "Community-Management",
+        "Bezahlte Boosts"
+      ],
+      "deliverables": [
+        "6 Social-Media-Postdesigns pro Monat",
+        "Content-Kalender, für dich erstellt und befüllt",
+        "Captions und Hashtags",
+        "Planen und Posten (wir posten auch deine eigenen Bilder)",
+        "Community-Management: Wir beantworten deine DMs und Kommentare",
+        "1 geboosteter Post (10 $ Werbebudget inklusive)",
+        "2 Korrekturrunden pro Design",
+        "Plattformen: Instagram, Facebook, LinkedIn"
+      ],
+      "revisions": "2 Korrekturrunden pro Design",
+      "duration": "Monatlich",
+      "extras": [
+        "Zusätzliche Postdesigns",
+        "Zusätzliche geboostete Posts",
+        "Zusätzliche Plattform"
+      ],
+      "limitations": [
+        "Werbebudget über die enthaltenen Boosts hinaus zahlt der Kunde",
+        "Foto- und Videoshootings sind nicht enthalten",
+        "Webdesign ist nicht enthalten"
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "priceFrom": 350,
+      "period": "month",
+      "recommended": true,
+      "bestFor": "Für wachsende Marken, die öfter sichtbar sein und mehr Menschen erreichen wollen.",
+      "included": [
+        "Social-Media-Design",
+        "Content-Planung",
+        "Community-Management",
+        "Bezahlte Boosts"
+      ],
+      "deliverables": [
+        "12 Social-Media-Postdesigns pro Monat",
+        "4 Story-Designs pro Monat",
+        "Content-Kalender, für dich erstellt und befüllt",
+        "Captions und Hashtags",
+        "Planen und Posten (wir posten auch deine eigenen Bilder)",
+        "Community-Management: Wir beantworten deine DMs und Kommentare",
+        "2 geboostete Posts (je 10 $ Werbebudget, inklusive)",
+        "2 Korrekturrunden pro Design",
+        "Plattformen: Instagram, Facebook, LinkedIn"
+      ],
+      "revisions": "2 Korrekturrunden pro Design",
+      "duration": "Monatlich",
+      "extras": [
+        "Zusätzliche Postdesigns",
+        "Zusätzliche geboostete Posts",
+        "Zusätzliche Plattform"
+      ],
+      "limitations": [
+        "Werbebudget über die enthaltenen Boosts hinaus zahlt der Kunde",
+        "Foto- und Videoshootings sind nicht enthalten",
+        "Webdesign ist nicht enthalten"
+      ]
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "priceFrom": 550,
+      "period": "month",
+      "recommended": false,
+      "bestFor": "Für etablierte Marken, die ihr Social Media komplett abgeben wollen.",
+      "included": [
+        "Social-Media-Design",
+        "Content-Planung",
+        "Community-Management",
+        "Bezahlte Boosts"
+      ],
+      "deliverables": [
+        "16 Social-Media-Postdesigns pro Monat",
+        "8 Story-Designs pro Monat",
+        "Content-Kalender, für dich erstellt und befüllt",
+        "Captions und Hashtags",
+        "Planen und Posten (wir posten auch deine eigenen Bilder)",
+        "Community-Management: Wir beantworten deine DMs und Kommentare",
+        "5 geboostete Posts (je 10 $ Werbebudget, inklusive)",
+        "3 Korrekturrunden pro Design",
+        "Plattformen: Instagram, Facebook, LinkedIn, TikTok und mehr"
+      ],
+      "revisions": "3 Korrekturrunden pro Design",
+      "duration": "Monatlich",
+      "extras": [
+        "Zusätzliche Postdesigns",
+        "Zusätzliche geboostete Posts",
+        "Zusätzliche Plattform"
+      ],
+      "limitations": [
+        "Werbebudget über die enthaltenen Boosts hinaus zahlt der Kunde",
+        "Foto- und Videoshootings sind nicht enthalten",
+        "Webdesign ist nicht enthalten"
+      ]
+    }
+  ],
+  "packageTerms": [
+    "Preise in US-Dollar, monatlich abgerechnet.",
+    "Nicht genutzte Posts werden nicht in den nächsten Monat übernommen.",
+    "Arbeiten außerhalb des Pakets werden vorab separat angeboten."
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "kicker": "Over Pixel Graphics",
+    "title": "Creatief",
+    "accent": "zonder grenzen.",
+    "intro": "Pixel Graphics is een onafhankelijke creatieve studio die strategie, design en social media combineert om bedrijven te helpen merken te bouwen die mensen onthouden."
+  },
+  "intro": {
+    "kicker": "Wie we zijn",
+    "headline": [
+      {
+        "text": "Remote van opzet.",
+        "accent": false
+      },
+      {
+        "text": "Geworteld in Suriname.",
+        "accent": false
+      },
+      {
+        "text": "Gebouwd voor de wereld.",
+        "accent": true
+      }
+    ],
+    "paragraphs": [
+      "Pixel Graphics is een volledig remote creatieve studio gevestigd in Suriname. We werken met merken over de hele wereld aan branding, grafisch ontwerp, social media en contentstrategie.",
+      "Online werken betekent geen kantoorkosten en geen grenzen. Je hebt direct contact met de mensen die je merk ontwerpen, via WhatsApp, e-mail of videogesprek.",
+      "Onze regel is simpel: elk ontwerp moet je helpen gezien, vertrouwd en gekozen te worden."
+    ],
+    "photo": "/uploads/service-marketing-advertising.webp"
+  },
+  "cards": [
+    {
+      "kicker": "Ons verhaal",
+      "title": "Waarom we begonnen",
+      "text": "Pixel Graphics is in Suriname opgericht vanuit één overtuiging: goed design mag niet afhangen van waar je bent. We zijn gestart als volledig remote studio, zodat groeiende bedrijven overal professionele creatieve ondersteuning krijgen, zonder de kosten en traagheid van een traditioneel bureau."
+    },
+    {
+      "kicker": "Onze missie",
+      "title": "Merken laten opvallen",
+      "text": "We helpen bedrijven gezien, vertrouwd en gekozen te worden. Met strategisch design, heldere content en consistente social media maken we van merken iets wat mensen herkennen, onthouden en waarmee ze willen samenwerken."
+    },
+    {
+      "kicker": "Onze visie",
+      "title": "Creativiteit zonder grenzen",
+      "text": "De creatieve partner worden die merken over de hele wereld vertrouwen, en bewijzen dat een remote studio uit Suriname werk kan maken dat wereldwijd meedoet."
+    }
+  ],
+  "values": {
+    "kicker": "Onze waarden",
+    "title": "Waar we",
+    "accent": "voor staan",
+    "intro": "Zes principes die bepalen hoe we ontwerpen, communiceren en samenwerken.",
+    "items": [
+      {
+        "icon": "spark",
+        "title": "Creatief denken",
+        "text": "Frisse ideeën, gebaseerd op wat je bedrijf echt nodig heeft."
+      },
+      {
+        "icon": "chat",
+        "title": "Professionele communicatie",
+        "text": "Duidelijke updates, eerlijke planning en snelle reacties."
+      },
+      {
+        "icon": "globe",
+        "title": "Wereldwijde samenwerking",
+        "text": "Thuis in werken over landen, culturen en tijdzones heen."
+      },
+      {
+        "icon": "remote",
+        "title": "Flexibel remote werken",
+        "text": "Online meetings, gedeelde bestanden en gestructureerde feedbackrondes."
+      },
+      {
+        "icon": "eye",
+        "title": "Oog voor detail",
+        "text": "Elke pixel, kleur en elk woord gecontroleerd voor oplevering."
+      },
+      {
+        "icon": "target",
+        "title": "Strategisch design",
+        "text": "Ontwerpkeuzes die je doelen ondersteunen, niet alleen mooi zijn."
+      }
+    ]
+  },
+  "why": {
+    "kicker": "Waarom met ons werken",
+    "title": "Waarom Pixel",
+    "accent": "Graphics?",
+    "items": [
+      {
+        "title": "Eén studio, elk beeld",
+        "text": "Branding, grafisch ontwerp, social media en contentstrategie, allemaal onder één dak. Je merk ziet er overal hetzelfde uit en klinkt overal hetzelfde, omdat alles van één team komt."
+      },
+      {
+        "title": "Duidelijke opdracht, duidelijke prijs",
+        "text": "Uurtarief, maandpakket of een persoonlijke offerte. Je weet precies wat je krijgt en wat het kost, voordat we beginnen."
+      },
+      {
+        "title": "Standaard wereldwijd",
+        "text": "We werken volledig online, in het Engels, met klanten waar ze ook zijn. Tijdzones zijn een planningsdetail, geen probleem."
+      },
+      {
+        "title": "Gebouwd op consistentie",
+        "text": "Elk ontwerp volgt je huisstijl, zodat elke post, flyer en verpakking onmiskenbaar als jouw merk voelt."
+      }
+    ]
+  },
+  "remote": {
+    "kicker": "Hoe remote werkt",
+    "title": "Onze remote",
+    "accent": "werkwijze",
+    "intro": "Op afstand werken betekent niet afstandelijk werken. Zo houden we de samenwerking persoonlijk en georganiseerd.",
+    "items": [
+      {
+        "icon": "calendar",
+        "title": "Online meetings",
+        "text": "Kick-offs, presentaties en check-ins via Google Meet, Zoom, Teams of WhatsApp."
+      },
+      {
+        "icon": "doc",
+        "title": "Gedeelde bestanden",
+        "text": "Eén duidelijke projectbriefing en één gedeelde map, zodat alles op één plek staat."
+      },
+      {
+        "icon": "pen",
+        "title": "Duidelijke feedback",
+        "text": "Gestructureerde feedbackrondes met alle feedback gebundeld. Geen eindeloze e-mailketens."
+      },
+      {
+        "icon": "clock",
+        "title": "Elke tijdzone",
+        "text": "We plannen meetings en deadlines rond jouw tijdzone, waar je ook bent."
+      }
+    ],
+    "button": "Bekijk ons volledige proces"
+  }
+}

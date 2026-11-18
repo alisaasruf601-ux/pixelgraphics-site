@@ -12,6 +12,7 @@ import { DeptVisual } from "./DeptVisual";
 import { Button } from "./ui";
 import { site } from "@/config/site";
 import { useLive, tf } from "./LiveContent";
+import { useI18n } from "@/i18n/I18nProvider";
 
 export type ShowcaseItem = { slug: string; title: string; number: string; image?: string | null; dept: Department; src?: object };
 
@@ -32,6 +33,7 @@ export function ServiceImage({ item, large = false, field }: { item: ShowcaseIte
 
 export function ServicePanel({ item, onClose }: { item: ShowcaseItem | null; onClose: () => void }) {
   const { home } = useLive();
+  const { t } = useI18n();
   const deviceReduce = useReducedMotion();
   const reduce = site.respectReducedMotion && deviceReduce;
   const panelRef = useRef<HTMLDivElement>(null);
@@ -82,7 +84,7 @@ export function ServicePanel({ item, onClose }: { item: ShowcaseItem | null; onC
                 <div className="overflow-hidden md:sticky md:top-0 md:rounded-[22px]">
                   <ServiceImage item={item} large />
                 </div>
-                <motion.button {...fade(0.15)} ref={closeRef} type="button" onClick={onClose} aria-label="Close service details"
+                <motion.button {...fade(0.15)} ref={closeRef} type="button" onClick={onClose} aria-label={t.panel.close}
                   className="absolute right-4 top-[max(16px,env(safe-area-inset-top))] grid h-11 w-11 place-items-center rounded-full bg-ink/80 text-cloud ring-1 ring-white/15 backdrop-blur transition hover:bg-teal hover:text-ink md:left-10 md:right-auto md:top-10">
                   <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
                 </motion.button>
@@ -90,12 +92,12 @@ export function ServicePanel({ item, onClose }: { item: ShowcaseItem | null; onC
 
               {/* Text column */}
               <div className="min-h-0 px-5 pb-10 pt-7 sm:px-10 md:overflow-y-auto md:py-10">
-                <motion.p {...fade(0.12)} className="text-xs font-semibold tracking-[0.2em] text-teal">SERVICE {item.number}</motion.p>
+                <motion.p {...fade(0.12)} className="text-xs font-semibold tracking-[0.2em] text-teal">{t.panel.service} {item.number}</motion.p>
                 <motion.h2 {...fade(0.16)} id="service-panel-title" data-tina-field={tf(item.src, "title")} className="mt-3 text-balance text-[1.65rem] text-cloud sm:text-[2.6rem]">{item.title}</motion.h2>
                 <motion.p {...fade(0.2)} data-tina-field={tf(item.dept, "intro")} className="mt-5 text-[15px] leading-relaxed text-ink-200 sm:text-base">{item.dept.intro}</motion.p>
 
                 <motion.div {...fade(0.26)}>
-                  <h3 className="mt-9 text-sm tracking-[0.12em] text-cloud">Services included</h3>
+                  <h3 className="mt-9 text-sm tracking-[0.12em] text-cloud">{t.panel.included}</h3>
                   <ul className="mt-4 flex flex-wrap gap-2">
                     {item.dept.services.map((s, i) => (
                       <li key={i} data-tina-field={tf(item.dept, "services", i)} className="rounded-full border border-white/10 bg-ink-800 px-3.5 py-1.5 text-[13px] text-ink-200">{s}</li>
@@ -105,7 +107,7 @@ export function ServicePanel({ item, onClose }: { item: ShowcaseItem | null; onC
 
                 {item.dept.deliverables?.length > 0 && (
                 <motion.div {...fade(0.32)}>
-                  <h3 className="mt-9 text-sm tracking-[0.12em] text-cloud">What you receive</h3>
+                  <h3 className="mt-9 text-sm tracking-[0.12em] text-cloud">{t.panel.receive}</h3>
                   <ul className="mt-4 space-y-3">
                     {item.dept.deliverables.map((d, i) => (
                       <li key={i} data-tina-field={tf(item.dept, "deliverables", i)} className="flex gap-3 text-[15px] leading-snug text-ink-200">
@@ -119,7 +121,7 @@ export function ServicePanel({ item, onClose }: { item: ShowcaseItem | null; onC
 
                 <motion.div {...fade(0.38)} className="mt-10 flex flex-col gap-3 sm:flex-row">
                   <Button href={`/contact?service=${encodeURIComponent(item.dept.shortTitle)}`} arrow field={tf(home.services, "cardButton")}>{home.services.cardButton}</Button>
-                  <Button href={`/services#${item.slug}`} variant="outline">Full service details</Button>
+                  <Button href={`/services#${item.slug}`} variant="outline">{t.panel.details}</Button>
                 </motion.div>
               </div>
             </div>

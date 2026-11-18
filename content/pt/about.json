@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "kicker": "Sobre a Pixel Graphics",
+    "title": "Criatividade",
+    "accent": "sem fronteiras.",
+    "intro": "A Pixel Graphics é um estúdio criativo independente que une estratégia, design e redes sociais para ajudar empresas a construir marcas que as pessoas lembram."
+  },
+  "intro": {
+    "kicker": "Quem somos",
+    "headline": [
+      {
+        "text": "Remotos por natureza.",
+        "accent": false
+      },
+      {
+        "text": "Com raízes no Suriname.",
+        "accent": false
+      },
+      {
+        "text": "Feitos para o mundo.",
+        "accent": true
+      }
+    ],
+    "paragraphs": [
+      "A Pixel Graphics é um estúdio criativo 100% remoto, baseado no Suriname. Trabalhamos com marcas do mundo todo em branding, design gráfico, redes sociais e estratégia de conteúdo.",
+      "Trabalhar online significa sem custos de escritório e sem fronteiras. Você fala diretamente com quem cria a sua marca, por WhatsApp, e-mail ou videochamada.",
+      "Nossa regra é simples: todo design precisa ajudar você a ser visto, confiável e escolhido."
+    ],
+    "photo": "/uploads/service-marketing-advertising.webp"
+  },
+  "cards": [
+    {
+      "kicker": "Nossa história",
+      "title": "Por que começamos",
+      "text": "A Pixel Graphics nasceu no Suriname com uma convicção: um bom design não deve depender de onde você está. Começamos como um estúdio totalmente remoto para que empresas em crescimento, em qualquer lugar, tivessem apoio criativo profissional, sem o custo e a lentidão de uma agência tradicional."
+    },
+    {
+      "kicker": "Nossa missão",
+      "title": "Fazer marcas se destacarem",
+      "text": "Ajudamos empresas a serem vistas, confiáveis e escolhidas. Com design estratégico, conteúdo claro e redes sociais consistentes, transformamos marcas em algo que as pessoas reconhecem, lembram e querem ter por perto."
+    },
+    {
+      "kicker": "Nossa visão",
+      "title": "Criatividade sem fronteiras",
+      "text": "Ser o parceiro criativo em que marcas do mundo todo confiam, provando que um estúdio remoto do Suriname pode criar trabalhos à altura de qualquer mercado global."
+    }
+  ],
+  "values": {
+    "kicker": "Nossos valores",
+    "title": "No que",
+    "accent": "acreditamos",
+    "intro": "Seis princípios que definem como criamos, nos comunicamos e colaboramos.",
+    "items": [
+      {
+        "icon": "spark",
+        "title": "Pensamento criativo",
+        "text": "Ideias novas, baseadas no que o seu negócio realmente precisa."
+      },
+      {
+        "icon": "chat",
+        "title": "Comunicação profissional",
+        "text": "Atualizações claras, prazos honestos e respostas rápidas."
+      },
+      {
+        "icon": "globe",
+        "title": "Colaboração global",
+        "text": "À vontade trabalhando entre países, culturas e fusos horários."
+      },
+      {
+        "icon": "remote",
+        "title": "Fluxo remoto flexível",
+        "text": "Reuniões online, arquivos compartilhados e rodadas de feedback organizadas."
+      },
+      {
+        "icon": "eye",
+        "title": "Atenção aos detalhes",
+        "text": "Cada pixel, cor e palavra revisados antes da entrega."
+      },
+      {
+        "icon": "target",
+        "title": "Design estratégico",
+        "text": "Decisões de design que apoiam seus objetivos, e não só ficam bonitas."
+      }
+    ]
+  },
+  "why": {
+    "kicker": "Por que trabalhar conosco",
+    "title": "Por que a Pixel",
+    "accent": "Graphics?",
+    "items": [
+      {
+        "title": "Um estúdio, todo o visual",
+        "text": "Branding, design gráfico, redes sociais e estratégia de conteúdo, tudo em um só lugar. Sua marca tem a mesma cara e a mesma voz em todo canal, porque tudo vem de uma só equipe."
+      },
+      {
+        "title": "Escopo claro, preço claro",
+        "text": "Valor por hora, pacote mensal ou orçamento personalizado. Você sabe exatamente o que recebe e quanto custa, antes de começarmos."
+      },
+      {
+        "title": "Global por padrão",
+        "text": "Trabalhamos 100% online, em inglês, com clientes onde quer que estejam. Fuso horário é um detalhe de planejamento, não um problema."
+      },
+      {
+        "title": "Feito para ser consistente",
+        "text": "Todo design segue a identidade da sua marca, para que cada post, flyer e embalagem tenha a sua cara."
+      }
+    ]
+  },
+  "remote": {
+    "kicker": "Como funciona o remoto",
+    "title": "Nossa forma de",
+    "accent": "trabalhar remoto",
+    "intro": "Trabalhar remotamente não significa trabalhar distante. Veja como mantemos a colaboração pessoal e organizada.",
+    "items": [
+      {
+        "icon": "calendar",
+        "title": "Reuniões online",
+        "text": "Kick-offs, apresentações e alinhamentos por Google Meet, Zoom, Teams ou WhatsApp."
+      },
+      {
+        "icon": "doc",
+        "title": "Arquivos compartilhados",
+        "text": "Um briefing de projeto claro e uma pasta compartilhada, para que tudo fique em um só lugar."
+      },
+      {
+        "icon": "pen",
+        "title": "Feedback claro",
+        "text": "Rodadas de revisão organizadas, com todo o feedback reunido. Nada de trocas intermináveis de e-mail."
+      },
+      {
+        "icon": "clock",
+        "title": "Qualquer fuso horário",
+        "text": "Planejamos reuniões e prazos de acordo com o seu fuso horário, onde quer que você esteja."
+      }
+    ],
+    "button": "Veja nosso processo completo"
+  }
+}

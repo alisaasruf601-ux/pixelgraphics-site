@@ -1,0 +1,146 @@
+{
+  "showcase": [
+    {
+      "title": "Branding & Identidade Visual",
+      "image": "/uploads/service-branding.webp",
+      "slug": "branding"
+    },
+    {
+      "title": "Marketing & Publicidade",
+      "slug": "marketing-advertising",
+      "image": "/uploads/service-marketing-advertising.webp"
+    },
+    {
+      "title": "Design para Redes Sociais",
+      "slug": "social-media-design",
+      "image": "/uploads/service-social-media-design.webp"
+    },
+    {
+      "title": "Design de Embalagens",
+      "slug": "packaging",
+      "image": "/uploads/service-packaging.webp"
+    },
+    {
+      "title": "Design Editorial & Impressos",
+      "slug": "editorial-print",
+      "image": "/uploads/service-editorial-print.webp"
+    },
+    {
+      "title": "Gestão de Redes Sociais",
+      "slug": "social-media-management",
+      "image": "/uploads/service-social-media-management.webp"
+    }
+  ],
+  "departments": [
+    {
+      "title": "Branding & Identidade Visual",
+      "shortTitle": "Branding & Identidade",
+      "number": "01",
+      "icon": "brand",
+      "summary": "Sua marca é uma primeira impressão que você nunca tem a chance de repetir. Criamos logos e identidades completas que as pessoas reconhecem na hora e em que confiam mais rápido.",
+      "intro": "Sua marca é uma primeira impressão que você nunca tem a chance de repetir. Criamos logos e identidades completas que as pessoas reconhecem na hora e em que confiam mais rápido.",
+      "services": [
+        "Design de Logo",
+        "Identidade de Marca",
+        "Manual da Marca",
+        "Cartões de Visita & Papelaria",
+        "Aplicações da Marca"
+      ],
+      "deliverables": [],
+      "slug": "branding"
+    },
+    {
+      "title": "Marketing & Publicidade",
+      "shortTitle": "Marketing & Publicidade",
+      "number": "02",
+      "icon": "marketing",
+      "summary": "Flyers, cartazes, outdoors e campanhas criados com um objetivo: fazer as pessoas pararem, olharem e agirem.",
+      "intro": "Flyers, cartazes, outdoors e campanhas criados com um objetivo: fazer as pessoas pararem, olharem e agirem.",
+      "services": [
+        "Flyers & Cartazes",
+        "Folders",
+        "Campanhas Publicitárias",
+        "Materiais Promocionais",
+        "Outdoors & Banners",
+        "Materiais de Marketing"
+      ],
+      "deliverables": [],
+      "slug": "marketing-advertising"
+    },
+    {
+      "title": "Design para Redes Sociais",
+      "shortTitle": "Design para Redes Sociais",
+      "number": "03",
+      "icon": "social",
+      "summary": "Posts, stories e carrosséis que fazem parar o scroll e deixam seu feed profissional, consistente e digno de ser seguido.",
+      "intro": "Posts, stories e carrosséis que fazem parar o scroll e deixam seu feed profissional, consistente e digno de ser seguido.",
+      "services": [
+        "Posts para Instagram",
+        "Stories para Instagram",
+        "Carrosséis para Redes Sociais",
+        "Artes para Facebook",
+        "Templates para Redes Sociais",
+        "Criativos para Anúncios Digitais"
+      ],
+      "deliverables": [],
+      "slug": "social-media-design"
+    },
+    {
+      "title": "Design de Embalagens",
+      "shortTitle": "Design de Embalagens",
+      "number": "04",
+      "icon": "packaging",
+      "summary": "Embalagens que vendem na prateleira. Caixas, rótulos e garrafas que contam a história da sua marca antes que alguém leia uma palavra.",
+      "intro": "Embalagens que vendem na prateleira. Caixas, rótulos e garrafas que contam a história da sua marca antes que alguém leia uma palavra.",
+      "services": [
+        "Embalagens de Produtos",
+        "Rótulos de Produtos",
+        "Design de Caixas",
+        "Design de Garrafas & Recipientes",
+        "Embalagens de Alimentos & Bebidas",
+        "Embalagens de Cosméticos"
+      ],
+      "deliverables": [],
+      "slug": "packaging"
+    },
+    {
+      "title": "Design Editorial & Impressos",
+      "shortTitle": "Editorial & Impressos",
+      "number": "05",
+      "icon": "editorial",
+      "summary": "Revistas, cardápios, catálogos e perfis institucionais, criados para que as pessoas realmente gostem de ler.",
+      "intro": "Revistas, cardápios, catálogos e perfis institucionais, criados para que as pessoas realmente gostem de ler.",
+      "services": [
+        "Revistas",
+        "Catálogos",
+        "Perfis Institucionais",
+        "Cardápios",
+        "Livros & E-books",
+        "Relatórios & Publicações"
+      ],
+      "deliverables": [],
+      "slug": "editorial-print"
+    },
+    {
+      "title": "Gestão de Redes Sociais",
+      "shortTitle": "Gestão de Redes Sociais",
+      "number": "06",
+      "icon": "management",
+      "summary": "Planejamos, escrevemos, criamos e agendamos o seu conteúdo, para que seus canais fiquem ativos e alinhados à marca enquanto você cuida do seu negócio.",
+      "intro": "Planejamos, escrevemos, criamos e agendamos o seu conteúdo, para que seus canais fiquem ativos e alinhados à marca enquanto você cuida do seu negócio.",
+      "services": [
+        "Estratégia para Redes Sociais",
+        "Planejamento de Conteúdo",
+        "Artes para Redes Sociais",
+        "Copywriting & Legendas",
+        "Agendamento de Conteúdo",
+        "Gestão de Instagram",
+        "Gestão de Facebook",
+        "Gestão de TikTok",
+        "Gestão de LinkedIn"
+      ],
+      "deliverables": [],
+      "slug": "social-media-management"
+    }
+  ]
+}

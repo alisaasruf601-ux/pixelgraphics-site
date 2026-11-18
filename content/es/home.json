@@ -1,0 +1,90 @@
+{
+  "hero": {
+    "kicker": "Creatividad sin fronteras",
+    "headline": [
+      {
+        "text": "SÉ VISTO.",
+        "accent": false
+      },
+      {
+        "text": "SÉ CONFIABLE.",
+        "accent": false
+      },
+      {
+        "text": "SÉ ELEGIDO.",
+        "accent": true
+      }
+    ],
+    "intro": "Diseño, redes sociales y estrategia de contenido para marcas que ya no quieren pasar desapercibidas. Convertimos a quienes hacen scroll en seguidores, y a los seguidores en clientes.",
+    "primaryButton": {
+      "label": "Agenda una llamada gratis",
+      "link": "/contact?topic=consultation"
+    },
+    "secondaryButton": {
+      "label": "Ver nuestros servicios",
+      "link": "/services"
+    },
+    "markets": "Con sede en Surinam | Marcas de todo el mundo confían en nosotros"
+  },
+  "services": {
+    "kicker": "Lo que hacemos",
+    "title": "Seis formas de",
+    "accent": "hacer crecer tu marca",
+    "intro": "Elige un servicio para ver qué incluye, qué recibes y cómo empezar.",
+    "cardButton": "Empieza tu proyecto"
+  },
+  "calculator": {
+    "title": "Calculadora",
+    "accent": "por hora",
+    "text": "Conoce al instante el precio de tu trabajo de diseño gráfico por hora.",
+    "points": [
+      "Elige el número de horas",
+      "Mira cómo se actualiza tu precio al instante",
+      "Envía tu solicitud, confirmamos antes de empezar"
+    ],
+    "button": "Calcula tu precio"
+  },
+  "process": {
+    "kicker": "Cómo trabajamos",
+    "title": "Nuestro",
+    "accent": "proceso",
+    "intro": "Un enfoque claro y estructurado. Totalmente remoto, contigo involucrado en cada paso.",
+    "button": "Ver el recorrido completo del cliente",
+    "steps": [
+      {
+        "title": "Descubrir",
+        "text": "Entender tu negocio, tus objetivos y tus necesidades.",
+        "icon": "eye"
+      },
+      {
+        "title": "Estrategia",
+        "text": "Definir una dirección creativa clara y un plan de proyecto.",
+        "icon": "target"
+      },
+      {
+        "title": "Crear",
+        "text": "Diseñar, producir y perfeccionar el trabajo solicitado.",
+        "icon": "pen"
+      },
+      {
+        "title": "Crecer",
+        "text": "Entregar el trabajo final y apoyar tus objetivos.",
+        "icon": "marketing"
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Paquetes mensuales",
+    "title": "Precios simples y",
+    "accent": "transparentes",
+    "intro": "Apoyo mensual flexible en diseño, redes sociales y marketing. ¿Necesitas un diseño puntual? Mira nuestra tarifa por hora.",
+    "note": "Precios desde, en dólares estadounidenses. El diseño web es un servicio aparte."
+  },
+  "finalCta": {
+    "title": "Demos vida a tu",
+    "accent": "próximo proyecto.",
+    "text": "Cuéntanos qué tienes en mente. Programamos una reunión online y te ayudamos a elegir el siguiente paso correcto.",
+    "primaryButton": "Agenda una reunión",
+    "secondaryButton": "Envía un mensaje"
+  }
+}

@@ -2,6 +2,8 @@
 /** Floating WhatsApp button (bottom-right on every page). Hidden when no number is set. */
 import { usePathname } from "next/navigation";
 import { whatsappLink, whatsappDisplay } from "@/config/site";
+import { useI18n } from "@/i18n/I18nProvider";
+import { splitLocale } from "@/i18n/config";
 
 export function WhatsAppGlyph({ className = "h-6 w-6" }: { className?: string }) {
   return (
@@ -13,16 +15,17 @@ export function WhatsAppGlyph({ className = "h-6 w-6" }: { className?: string })
 }
 
 export function WhatsAppButton() {
-  const pathname = usePathname();
-  const href = whatsappLink();
+  const { t } = useI18n();
+  const pathname = splitLocale(usePathname()).rest;
+  const href = whatsappLink(t.whatsapp.message);
   if (!href) return null;
   const raised = pathname === "/calculator"; // keep clear of the calculator's mobile price bar
   return (
     <a href={href} target="_blank" rel="noopener noreferrer"
-      aria-label={`Chat with Pixel Graphics on WhatsApp (${whatsappDisplay()})`}
+      aria-label={`${t.whatsapp.aria} (${whatsappDisplay()})`}
       className={`group fixed right-4 z-50 flex items-center gap-2 rounded-full bg-[#25D366] p-3.5 text-white shadow-[0_12px_30px_-8px_rgba(37,211,102,.6)] transition hover:scale-105 hover:shadow-[0_16px_36px_-8px_rgba(37,211,102,.75)] focus-visible:outline-offset-4 sm:right-6 ${raised ? "bottom-24 lg:bottom-6" : "bottom-[max(16px,env(safe-area-inset-bottom))] sm:bottom-6"}`}>
       <WhatsAppGlyph className="h-7 w-7" />
-      <span className="hidden max-w-0 overflow-hidden whitespace-nowrap text-sm font-semibold transition-all duration-300 group-hover:max-w-[160px] group-hover:pr-1 lg:inline-block">Chat with us</span>
+      <span className="hidden max-w-0 overflow-hidden whitespace-nowrap text-sm font-semibold transition-all duration-300 group-hover:max-w-[160px] group-hover:pr-1 lg:inline-block">{t.whatsapp.chat}</span>
     </a>
   );
 }

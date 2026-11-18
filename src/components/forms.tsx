@@ -1,9 +1,24 @@
 "use client";
-import Link from "next/link";
+import Link from "./LocalLink";
 import { useCallback, useState, type ReactNode } from "react";
+import { useI18n } from "@/i18n/I18nProvider";
+import type { Dict } from "@/i18n/dictionaries/en";
+
+/** A form option: a plain string, or an English value (sent to you) with a translated label (shown to the visitor). */
+export type Opt = string | { value: string; label: string };
+const ov = (o: Opt) => (typeof o === "string" ? o : o.value);
+const ol = (o: Opt) => (typeof o === "string" ? o : o.label);
+
+/** Server messages arrive in English; show them in the visitor's language. */
+function tr(msg: string, t: Dict) {
+  if (!msg) return msg;
+  if (/ is required$/.test(msg)) return t.forms.err.required;
+  return (t.forms.err.server as Record<string, string>)[msg] ?? msg;
+}
 
 type Status = "idle" | "loading" | "success" | "error";
 export function useSubmit(endpoint: string) {
+  const { t } = useI18n();
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -13,12 +28,14 @@ export function useSubmit(endpoint: string) {
       const res = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.ok) { setStatus("success"); return true; }
-      setErrors(json.errors ?? {}); setMessage(json.message || "Something went wrong. Please try again."); setStatus("error");
+      const errs: Record<string, string> = json.errors ?? {};
+      setErrors(Object.fromEntries(Object.entries(errs).map(([k, v]) => [k, tr(v, t)])));
+      setMessage(json.message ? tr(json.message, t) : t.forms.err.generic); setStatus("error");
       return false;
     } catch {
-      setMessage("Network error. Check your connection and try again."); setStatus("error"); return false;
+      setMessage(t.forms.err.network); setStatus("error"); return false;
     }
-  }, [endpoint]);
+  }, [endpoint, t]);
   const reset = () => { setStatus("idle"); setErrors({}); setMessage(""); };
   return { submit, status, message, errors, reset };
 }
@@ -59,15 +76,16 @@ export function TextArea({ name, label, error, required, hint, className = "", r
   );
 }
 
-export function SelectField({ name, label, error, required, hint, className = "", options, placeholder = "Select…", ...rest }:
-  FieldProps & { options: readonly string[]; placeholder?: string } & React.SelectHTMLAttributes<HTMLSelectElement>) {
+export function SelectField({ name, label, error, required, hint, className = "", options, placeholder, ...rest }:
+  FieldProps & { options: readonly Opt[]; placeholder?: string } & React.SelectHTMLAttributes<HTMLSelectElement>) {
+  const { t } = useI18n();
   return (
     <div className={className}>
       <label htmlFor={name} className="field-label">{label}{required && <span className="text-teal" aria-hidden="true"> *</span>}</label>
       <select id={name} name={name} required={required} aria-invalid={Boolean(error)} defaultValue=""
         aria-describedby={error ? `${name}-err` : undefined} className={`field appearance-none bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22 fill=%22%2369C9CA%22><path d=%22M5 7l5 6 5-6z%22/></svg>')] bg-[length:18px] bg-[right_14px_center] bg-no-repeat pr-10 ${error ? "field-error" : ""}`} {...rest}>
-        <option value="" disabled>{placeholder}</option>
-        {options.map((o) => <option key={o} value={o}>{o}</option>)}
+        <option value="" disabled>{placeholder ?? t.forms.select}</option>
+        {options.map((o) => <option key={ov(o)} value={ov(o)}>{ol(o)}</option>)}
       </select>
       <FieldMsg name={name} error={error} hint={hint} />
     </div>
@@ -76,15 +94,15 @@ export function SelectField({ name, label, error, required, hint, className = ""
 
 /** Pill-style radio or checkbox group (keyboard accessible native inputs). */
 export function ChoiceGroup({ name, label, options, type = "radio", error, required, defaultValue }:
-  { name: string; label: string; options: readonly string[]; type?: "radio" | "checkbox"; error?: string; required?: boolean; defaultValue?: string }) {
+  { name: string; label: string; options: readonly Opt[]; type?: "radio" | "checkbox"; error?: string; required?: boolean; defaultValue?: string }) {
   return (
     <fieldset aria-describedby={error ? `${name}-err` : undefined}>
       <legend className="field-label">{label}{required && <span className="text-teal" aria-hidden="true"> *</span>}</legend>
       <div className="flex flex-wrap gap-2">
         {options.map((o) => (
-          <label key={o} className="relative">
-            <input type={type} name={name} value={o} defaultChecked={defaultValue === o} className="peer sr-only" />
-            <span className="chip peer-checked:border-teal peer-checked:bg-teal peer-checked:text-ink peer-focus-visible:ring-2 peer-focus-visible:ring-teal peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-ink">{o}</span>
+          <label key={ov(o)} className="relative">
+            <input type={type} name={name} value={ov(o)} defaultChecked={defaultValue === ov(o)} className="peer sr-only" />
+            <span className="chip peer-checked:border-teal peer-checked:bg-teal peer-checked:text-ink peer-focus-visible:ring-2 peer-focus-visible:ring-teal peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-ink">{ol(o)}</span>
           </label>
         ))}
       </div>
@@ -94,11 +112,12 @@ export function ChoiceGroup({ name, label, options, type = "radio", error, requi
 }
 
 export function Consent({ error }: { error?: string }) {
+  const { t } = useI18n();
   return (
     <div>
       <label className="flex cursor-pointer items-start gap-3 text-sm text-ink-200">
         <input type="checkbox" name="consent" data-bool className="mt-0.5 h-5 w-5 shrink-0 accent-[#69C9CA]" aria-invalid={Boolean(error)} aria-describedby={error ? "consent-err" : undefined} />
-        <span>I agree that Pixel Graphics processes my details to respond to this request, as described in the <Link href="/privacy" className="text-teal underline underline-offset-2">privacy policy</Link>.</span>
+        <span>{t.forms.consent} <Link href="/privacy" className="text-teal underline underline-offset-2">{t.forms.consentLink}</Link>.</span>
       </label>
       <FieldMsg name="consent" error={error} />
     </div>
@@ -122,15 +141,22 @@ export function FormError({ message }: { message: string }) {
 }
 
 export function SuccessPanel({ title, children, onReset }: { title: string; children: ReactNode; onReset?: () => void }) {
+  const { t } = useI18n();
   return (
     <div role="status" className="rounded-panel border border-teal/30 bg-teal/[0.07] p-8 text-center sm:p-12">
       <div className="mx-auto mb-6 grid h-16 w-16 place-items-center rounded-full bg-teal text-3xl text-ink" aria-hidden="true">✓</div>
       <h2 className="text-3xl text-cloud sm:text-4xl">{title}</h2>
       <div className="mx-auto mt-4 max-w-md text-ink-200">{children}</div>
-      {onReset && <button type="button" onClick={onReset} className="btn btn-outline mt-8">Send another</button>}
+      {onReset && <button type="button" onClick={onReset} className="btn btn-outline mt-8">{t.forms.sendAnother}</button>}
     </div>
   );
 }
 
-export const countries = ["Netherlands", "Suriname", "Brazil", "Belgium", "Germany", "United Kingdom", "United States", "Canada", "Curaçao", "Aruba", "Portugal", "Other"] as const;
-export const budgets = ["Under US$250", "US$250 – 500", "US$500 – 1,000", "US$1,000 – 2,500", "US$2,500+", "Not sure yet"] as const;
+/** English values (what you receive) with translated labels. */
+export const countryValues = ["Netherlands", "Suriname", "Brazil", "Belgium", "Germany", "United Kingdom", "United States", "Canada", "Curaçao", "Aruba", "Portugal", "Spain", "Other"] as const;
+export const budgetValues = ["Under US$250", "US$250 to 500", "US$500 to 1,000", "US$1,000 to 2,500", "US$2,500+", "Not sure yet"] as const;
+export function useFormOptions() {
+  const { t } = useI18n();
+  const map = (vals: readonly string[], labels: readonly string[]) => vals.map((value, i) => ({ value, label: labels[i] ?? value }));
+  return { countries: map(countryValues, t.forms.countries), budgets: map(budgetValues, t.forms.budgets) };
+}

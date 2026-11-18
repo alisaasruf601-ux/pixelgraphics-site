@@ -54,13 +54,14 @@ export const site = {
   social: data.social,
 };
 
+/** Main menu. The labels per language are in src/i18n/dictionaries (nav.*). */
 export const nav = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Our Process", href: "/process" },
-  { label: "Contact", href: "/contact" },
+  { key: "home", href: "/" },
+  { key: "about", href: "/about" },
+  { key: "services", href: "/services" },
+  { key: "pricing", href: "/pricing" },
+  { key: "process", href: "/process" },
+  { key: "contact", href: "/contact" },
 ] as const;
 
 export const bookingHref = site.bookingUrl || "/book";

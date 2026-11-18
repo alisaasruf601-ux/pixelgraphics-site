@@ -12,6 +12,8 @@ import servicesJson from "../../content/services.json";
 import pricingJson from "../../content/pricing.json";
 import themeJson from "../../content/theme.json";
 import aboutJson from "../../content/about.json";
+import type { Locale } from "@/i18n/config";
+import { contentPath, type PageContent } from "@/i18n/content";
 import { HOME_QUERY, SERVICES_QUERY, PRICING_QUERY, THEME_QUERY, ABOUT_QUERY } from "@/lib/tina-queries";
 import { themeVars, type ThemeData } from "@/config/theme";
 import { googleFontsHref } from "@/config/fonts";
@@ -24,19 +26,22 @@ type About = typeof aboutJson;
 type Live = { home: Home; services: Services; pricing: Pricing; theme: ThemeData; about: About };
 const Ctx = createContext<Live>({ home: homeJson, services: servicesJson, pricing: pricingJson, theme: themeJson, about: aboutJson });
 
-// Stable references: useTina re-initialises whenever `data`/`variables` change identity.
-const HOME = { query: HOME_QUERY, variables: { relativePath: "home.json" }, data: { home: homeJson } };
-const SERVICES = { query: SERVICES_QUERY, variables: { relativePath: "services.json" }, data: { services: servicesJson } };
-const PRICING = { query: PRICING_QUERY, variables: { relativePath: "pricing.json" }, data: { pricing: pricingJson } };
-const ABOUT = { query: ABOUT_QUERY, variables: { relativePath: "about.json" }, data: { about: aboutJson } };
 const THEME = { query: THEME_QUERY, variables: { relativePath: "theme.json" }, data: { theme: themeJson as ThemeData } };
 
-export function LiveContentProvider({ children }: { children: ReactNode }) {
-  const h = useTina(HOME);
-  const s = useTina(SERVICES);
-  const p = useTina(PRICING);
+/** Content of the current language. In the /admin editor each language is its own document (e.g. nl/home.json). */
+export function LiveContentProvider({ children, lang, content }: { children: ReactNode; lang: Locale; content: PageContent }) {
+  // Stable references: useTina re-initialises whenever `data`/`variables` change identity.
+  const q = useMemo(() => ({
+    home: { query: HOME_QUERY, variables: { relativePath: contentPath(lang, "home") }, data: { home: content.home } },
+    services: { query: SERVICES_QUERY, variables: { relativePath: contentPath(lang, "services") }, data: { services: content.services } },
+    pricing: { query: PRICING_QUERY, variables: { relativePath: contentPath(lang, "pricing") }, data: { pricing: content.pricing } },
+    about: { query: ABOUT_QUERY, variables: { relativePath: contentPath(lang, "about") }, data: { about: content.about } },
+  }), [lang, content]);
+  const h = useTina(q.home);
+  const s = useTina(q.services);
+  const p = useTina(q.pricing);
   const t = useTina(THEME);
-  const ab = useTina(ABOUT);
+  const ab = useTina(q.about);
   const theme = t.data.theme;
 
   // Apply font / size / colour choices live (only differs from the saved theme while editing).
