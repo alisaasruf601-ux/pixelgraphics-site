@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
 import { Newsletter } from "./Newsletter";
-import { nav, site, socialLinks, whatsappLink, bookingHref } from "@/config/site";
+import { nav, site, socialLinks, whatsappLink, whatsappDisplay, bookingHref } from "@/config/site";
+import { Icon } from "./Icon";
+import { WhatsAppGlyph } from "./WhatsAppButton";
 import { departments } from "@/config/services";
 
 const footerServices = departments.map((d) => ({ label: d.shortTitle, href: `/services#${d.slug}` }));
@@ -28,8 +30,9 @@ export function Footer() {
           <div>
             <h2 className="mb-5 font-sans text-xs font-semibold normal-case tracking-[0.2em] text-teal">CONTACT</h2>
             <ul className="space-y-3 text-[15px] text-ink-200">
-              {site.contact.email && <li><a className="hover:text-teal" href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>}
-              {wa && <li><a className="hover:text-teal" href={wa} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>}
+              <li className="flex items-center gap-2.5"><Icon name="globe" className="h-5 w-5 shrink-0" />Global · remote-first studio</li>
+              {site.contact.email && <li><a className="flex items-center gap-2.5 hover:text-teal" href={`mailto:${site.contact.email}`}><Icon name="mail" className="h-5 w-5 shrink-0" /><span className="min-w-0">{site.contact.email.split("@")[0]}@<wbr />{site.contact.email.split("@")[1]}</span></a></li>}
+              {wa && <li><a className="flex items-center gap-2.5 hover:text-teal" href={wa} target="_blank" rel="noopener noreferrer"><WhatsAppGlyph className="h-5 w-5 shrink-0 text-[#25D366]" />{whatsappDisplay()}</a></li>}
               <li><a className="hover:text-teal" href={bookingHref}>Book an online meeting</a></li>
               <li><Link className="hover:text-teal" href="/contact">Contact form</Link></li>
             </ul>

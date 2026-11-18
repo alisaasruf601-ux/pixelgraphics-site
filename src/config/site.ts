@@ -66,6 +66,15 @@ export const nav = [
 export const bookingHref = site.bookingUrl || "/book";
 export const isExternalBooking = Boolean(site.bookingUrl);
 
+/** WhatsApp number for display, e.g. "+597 832-0838". */
+export function whatsappDisplay() {
+  const d = (site.contact.whatsapp || "").replace(/\D/g, "");
+  if (!d) return "";
+  if (d.startsWith("597") && d.length === 10) return `+597 ${d.slice(3, 6)}-${d.slice(6)}`;
+  if (d.startsWith("31") && d.length === 11) return `+31 ${d.slice(2, 3)} ${d.slice(3, 7)} ${d.slice(7)}`;
+  return `+${d}`;
+}
+
 export function whatsappLink(message = "Hi Pixel Graphics, I'd like to talk about a project.") {
   if (!site.contact.whatsapp) return "";
   return `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(message)}`;

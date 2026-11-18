@@ -6,6 +6,7 @@ import { theme } from "@/config/content";
 import { googleFontsHref } from "@/config/fonts";
 import { themeVars } from "@/config/theme";
 import { LiveContentProvider } from "@/components/LiveContent";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import "@fontsource/archivo-black/400.css";
 import "@fontsource/poppins/300.css";
 import "@fontsource/poppins/400.css";
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main"><MotionProvider><LiveContentProvider>{children}</LiveContentProvider></MotionProvider></main>
         <Footer />
+        <WhatsAppButton />
         <CookieConsent />
         <DevConfigNotice />
       </body>

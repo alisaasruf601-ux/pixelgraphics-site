@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { PageHero } from "@/components/ui";
 import { ContactForm } from "@/components/ContactForm";
 import { Icon } from "@/components/Icon";
-import { site, socialLinks, whatsappLink, bookingHref } from "@/config/site";
+import { site, socialLinks, whatsappLink, whatsappDisplay, bookingHref } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="container-site grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:gap-16">
           <aside className="space-y-4" aria-label="Other ways to reach us">
             <ContactCard icon="calendar" title="Book an online meeting" text="Pick a time that suits your time zone." href={bookingHref} cta="Book a Meeting" />
-            {wa && <ContactCard icon="chat" title="WhatsApp" text="Quick question? Message us directly." href={wa} cta="Chat on WhatsApp" external />}
+            {wa && <ContactCard icon="chat" title="WhatsApp" text={`Quick question? Message us directly: ${whatsappDisplay()}`} href={wa} cta="Chat on WhatsApp" external />}
             {site.contact.email && <ContactCard icon="mail" title="Email" text={site.contact.email} href={`mailto:${site.contact.email}`} cta="Send an email" />}
             <ContactCard icon="calc" title="Not sure about the budget?" text="Calculate graphic design work by the hour, or request a personal quote." href="/calculator" cta="Use the calculator" />
             <ContactCard icon="doc" title="Bigger project?" text="Share the details in a structured project brief." href="/brief" cta="Open the project brief" />
