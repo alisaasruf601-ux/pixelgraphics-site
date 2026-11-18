@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-ink-950 pt-20 sm:pt-24">
       <div className="container-site">
-        <div className="grid gap-12 border-b border-white/10 pb-16 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1.4fr] [&>*]:min-w-0">
+        <div className="grid gap-12 border-b border-white/10 pb-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[1.3fr_0.8fr_1.1fr_0.9fr_1.75fr] [&>*]:min-w-0">
           <div>
             <Logo size={44} />
             <p className="mt-6 font-display text-xl uppercase text-cloud">Creative Without <span className="text-teal">Borders.</span></p>
@@ -31,7 +31,7 @@ export function Footer() {
             <h2 className="mb-5 font-sans text-xs font-semibold normal-case tracking-[0.2em] text-teal">CONTACT</h2>
             <ul className="space-y-3 text-[15px] text-ink-200">
               <li className="flex items-center gap-2.5"><Icon name="globe" className="h-5 w-5 shrink-0" />Global · remote-first studio</li>
-              {site.contact.email && <li><a className="flex items-center gap-2.5 hover:text-teal" href={`mailto:${site.contact.email}`}><Icon name="mail" className="h-5 w-5 shrink-0" /><span className="min-w-0">{site.contact.email.split("@")[0]}@<wbr />{site.contact.email.split("@")[1]}</span></a></li>}
+              {site.contact.email && <li><a className="flex items-center gap-2.5 hover:text-teal" href={`mailto:${site.contact.email}`}><Icon name="mail" className="h-5 w-5 shrink-0" /><span className="whitespace-nowrap lg:text-sm xl:text-[clamp(0.8rem,1.05vw,1rem)]">{site.contact.email}</span></a></li>}
               {wa && <li><a className="flex items-center gap-2.5 hover:text-teal" href={wa} target="_blank" rel="noopener noreferrer"><WhatsAppGlyph className="h-5 w-5 shrink-0 text-[#25D366]" />{whatsappDisplay()}</a></li>}
               <li><a className="hover:text-teal" href={bookingHref}>Book an online meeting</a></li>
               <li><Link className="hover:text-teal" href="/contact">Contact form</Link></li>

@@ -152,7 +152,7 @@ function CalculatorPreview() {
   const rate = Number(hourly.rate) || 0;
   const total = Math.round(hours * rate * 100) / 100;
   return (
-    <div aria-hidden="true" className="pointer-events-none absolute right-10 top-1/2 hidden w-[400px] -translate-y-1/2 rotate-[-4deg] lg:block xl:right-20 xl:w-[430px]">
+    <div aria-hidden="true" className="pointer-events-none absolute right-10 top-1/2 hidden w-[400px] -translate-y-1/2 lg:block xl:right-20 xl:w-[430px]">
       <div className="rounded-[28px] bg-ink p-7 text-cloud shadow-[0_40px_80px_-30px_rgba(0,0,0,.55)]">
         <p className="text-[11px] font-semibold tracking-[0.2em] text-teal">YOUR ESTIMATE</p>
         <p className="mt-2 text-sm text-ink-300"><span className="pointer-events-auto" data-tina-field={tf(hourly, "service")}>{hourly.service}</span> · <span className="pointer-events-auto text-cloud" data-tina-field={tf(hourly, "rate")}>{money(rate)}</span> per hour</p>

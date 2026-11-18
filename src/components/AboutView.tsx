@@ -66,7 +66,7 @@ export function AboutView() {
               <li key={i}><Reveal delay={(i % 3) * 0.08} className="h-full">
                 <div className="group h-full rounded-card border border-white/[0.07] bg-ink-800/60 p-7 transition hover:border-teal/40">
                   <span data-tina-field={tf(v, "icon")} className="grid h-14 w-14 place-items-center rounded-2xl bg-teal/10 text-cloud transition group-hover:bg-teal group-hover:text-ink"><Icon name={v.icon as IconKey} className="h-8 w-8" accent /></span>
-                  <h3 className="mt-6 text-xl text-cloud sm:min-h-[2lh]" data-tina-field={tf(v, "title")}>{v.title}</h3>
+                  <h3 className="mt-6 text-xl text-cloud lg:whitespace-nowrap lg:text-[clamp(0.78rem,1.1vw,1.05rem)]" data-tina-field={tf(v, "title")}>{v.title}</h3>
                   <p className="mt-3 leading-relaxed text-ink-300" data-tina-field={tf(v, "text")}>{v.text}</p>
                 </div>
               </Reveal></li>

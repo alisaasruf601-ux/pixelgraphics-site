@@ -21,8 +21,8 @@ export default function ServicesPage() {
       <PageHero kicker="Our services" title="Six services." accent="One creative partner."
         intro="Everything your brand needs to be seen and remembered, from logo and packaging to print and social media. We focus on what we do best: design that works.">
         <nav aria-label="Service departments" className="mt-12">
-          <ul className="flex flex-wrap gap-2">
-            {departments.map((d) => <li key={d.slug}><a href={`#${d.slug}`} className="chip"><span className="text-teal">{d.number}</span>{d.shortTitle}</a></li>)}
+          <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+            {departments.map((d) => <li key={d.slug}><a href={`#${d.slug}`} className="chip w-full"><span className="text-teal">{d.number}</span>{d.shortTitle}</a></li>)}
           </ul>
         </nav>
       </PageHero>
