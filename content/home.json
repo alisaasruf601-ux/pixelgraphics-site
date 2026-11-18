@@ -1,0 +1,94 @@
+{
+  "hero": {
+    "kicker": "Creative Without Borders",
+    "headline": [
+      {
+        "text": "Design.",
+        "accent": false
+      },
+      {
+        "text": "Market.",
+        "accent": false
+      },
+      {
+        "text": "Grow Your",
+        "accent": true
+      },
+      {
+        "text": "Brand.",
+        "accent": true
+      }
+    ],
+    "intro": "Creative strategy, powerful design and digital marketing solutions for businesses ready to stand out internationally.",
+    "primaryButton": {
+      "label": "Get a Free Consultation",
+      "link": "/contact?topic=consultation"
+    },
+    "secondaryButton": {
+      "label": "Explore Services",
+      "link": "/services"
+    },
+    "markets": "Netherlands · Suriname · Brazil · and clients worldwide"
+  },
+  "services": {
+    "kicker": "What we do",
+    "title": "Six ways we",
+    "accent": "grow your brand",
+    "intro": "Pick a service to see what’s included, what you receive and how to get started.",
+    "cardButton": "Start Your Project"
+  },
+  "calculator": {
+    "title": "Hourly",
+    "accent": "Calculator",
+    "text": "See the price of your graphic design work by the hour — instantly.",
+    "points": [
+      "Choose the number of hours",
+      "See your price update instantly",
+      "Send your request — we confirm before we start"
+    ],
+    "button": "Calculate Your Price"
+  },
+  "process": {
+    "kicker": "How we work",
+    "title": "Our",
+    "accent": "Process",
+    "intro": "A clear, structured approach — fully remote, with you involved at every step.",
+    "button": "See the full client journey",
+    "steps": [
+      {
+        "title": "Discover",
+        "text": "Understand your business, objectives and requirements.",
+        "icon": "eye"
+      },
+      {
+        "title": "Strategize",
+        "text": "Develop a clear creative direction and project plan.",
+        "icon": "target"
+      },
+      {
+        "title": "Create",
+        "text": "Design, produce and refine the requested work.",
+        "icon": "pen"
+      },
+      {
+        "title": "Grow",
+        "text": "Deliver the final work and support your objectives.",
+        "icon": "marketing"
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Monthly packages",
+    "title": "Simple, Transparent",
+    "accent": "Pricing",
+    "intro": "Flexible monthly support for design, social media and marketing. Need a one-off design? See our hourly rate.",
+    "note": "Starting prices in US dollars. Website design is a separate service."
+  },
+  "finalCta": {
+    "title": "Let’s Bring Your Next",
+    "accent": "Project to Life.",
+    "text": "Tell us what you have in mind. We’ll schedule an online meeting and help you choose the right next step.",
+    "primaryButton": "Book a Meeting",
+    "secondaryButton": "Send a message"
+  }
+}

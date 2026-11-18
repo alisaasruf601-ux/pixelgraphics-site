@@ -1,0 +1,18 @@
+{
+  "contact": {
+    "email": "",
+    "whatsapp": ""
+  },
+  "bookingUrl": "",
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "linkedin": "",
+    "behance": ""
+  },
+  "logoIntro": "every-visit",
+  "heroVideo": {
+    "src": "",
+    "poster": ""
+  }
+}

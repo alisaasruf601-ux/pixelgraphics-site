@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scrollbar-gutter: stable; }
+  body { @apply bg-ink text-cloud font-sans antialiased; }
+  ::selection { background: #69C9CA; color: #222026; }
+  :focus-visible { outline: 2px solid #69C9CA; outline-offset: 3px; border-radius: 6px; }
+  h1, h2, h3, h4 { @apply font-display uppercase; letter-spacing: -0.01em; line-height: .98; font-weight: var(--display-weight, 400); }
+  .font-display { font-weight: var(--display-weight, 400); }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+}
+
+@layer components {
+  .container-site { @apply mx-auto w-full max-w-site px-5 sm:px-8 lg:px-12; }
+  .kicker { @apply flex items-center gap-3 text-xs sm:text-[13px] font-semibold uppercase tracking-[0.2em] text-teal; }
+  .kicker::before { content: ""; @apply block h-[3px] w-10 sm:w-14 rounded-full bg-teal; }
+  .kicker-dark { @apply text-ink; }
+  .kicker-dark::before { @apply bg-ink; }
+  .btn { @apply inline-flex items-center justify-center gap-3 rounded-full px-6 py-3.5 text-[15px] font-semibold transition-all duration-300 ease-out; }
+  .btn .btn-arrow { @apply grid h-7 w-7 place-items-center rounded-full text-sm transition-transform duration-300; }
+  .btn:hover .btn-arrow { transform: translateX(4px); }
+  .btn-primary { @apply bg-teal text-ink hover:bg-teal-300 shadow-[0_10px_30px_-10px_rgba(105,201,202,.6)]; }
+  .btn-primary .btn-arrow { @apply bg-ink text-teal; }
+  .btn-dark { @apply bg-ink text-cloud hover:bg-ink-800; }
+  .btn-dark .btn-arrow { @apply bg-teal text-ink; }
+  .btn-outline { @apply border border-white/25 text-cloud hover:border-teal hover:text-teal; }
+  .btn-outline-dark { @apply border border-ink/30 text-ink hover:border-ink hover:bg-ink hover:text-cloud; }
+  .card-dark { @apply rounded-card border border-white/[0.07] bg-ink-800/70; }
+  .text-muted { @apply text-ink-300; }
+  .field-label { @apply mb-2 block text-sm font-semibold text-cloud; }
+  .field { @apply w-full rounded-xl border border-white/10 bg-ink-900 px-4 py-3.5 text-[15px] text-cloud placeholder:text-ink-400 transition focus:border-teal focus:outline-none focus:ring-4 focus:ring-teal/15; }
+  .field-error { @apply border-red-400/80 focus:border-red-400 focus:ring-red-400/15; }
+  .chip { @apply inline-flex cursor-pointer select-none items-center gap-2 rounded-full border border-white/[0.12] px-4 py-2.5 text-sm font-medium text-ink-200 transition hover:border-teal/60; }
+  .chip-on { @apply border-teal bg-teal text-ink hover:border-teal; }
+  .pattern-bg { background-image: url("/brand/pattern-dark.svg"); background-size: 720px auto; background-repeat: repeat; }
+  .glow-teal { background: radial-gradient(closest-side, rgba(105,201,202,.22), transparent); }
+  .prose-pg p { @apply mb-4 leading-relaxed text-ink-200; }
+  .prose-pg h2 { @apply mb-4 mt-10 text-2xl text-cloud; }
+  .prose-pg ul { @apply mb-4 list-disc space-y-1 pl-5 text-ink-200; }
+}
+
+/* Logo intro: charcoal cover before React loads (removed by the intro; auto-fades as a failsafe) */
+html.pg-intro::after { content: ""; position: fixed; inset: 0; z-index: 99; background: #222026; pointer-events: none; animation: pg-cover-out .3s 10s forwards; }
+html.pg-intro-logo [data-site-logo] { opacity: 0; animation: pg-logo-in .3s 10.5s forwards; }
+@keyframes pg-cover-out { to { opacity: 0; visibility: hidden; } }
+@keyframes pg-logo-in { to { opacity: 1; } }
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+}

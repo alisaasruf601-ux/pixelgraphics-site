@@ -1,0 +1,146 @@
+{
+  "showcase": [
+    {
+      "slug": "branding",
+      "title": "Branding & Visual Identity",
+      "image": ""
+    },
+    {
+      "slug": "marketing-advertising",
+      "title": "Marketing & Advertising",
+      "image": ""
+    },
+    {
+      "slug": "social-media-design",
+      "title": "Social Media Design",
+      "image": ""
+    },
+    {
+      "slug": "packaging",
+      "title": "Packaging Design",
+      "image": ""
+    },
+    {
+      "slug": "editorial-print",
+      "title": "Editorial & Print Design",
+      "image": ""
+    },
+    {
+      "slug": "social-media-management",
+      "title": "Social Media Management",
+      "image": ""
+    }
+  ],
+  "departments": [
+    {
+      "slug": "branding",
+      "number": "01",
+      "title": "Branding & Visual Identity",
+      "shortTitle": "Branding & Identity",
+      "icon": "brand",
+      "summary": "Distinctive logos and complete brand identities that make businesses recognizable.",
+      "intro": "Distinctive logos and complete brand identities that make businesses recognizable.",
+      "services": [
+        "Logo Design",
+        "Brand Identity",
+        "Brand Guidelines",
+        "Business Cards & Stationery",
+        "Brand Applications"
+      ],
+      "deliverables": []
+    },
+    {
+      "slug": "marketing-advertising",
+      "number": "02",
+      "title": "Marketing & Advertising",
+      "shortTitle": "Marketing & Advertising",
+      "icon": "marketing",
+      "summary": "Creative marketing materials and advertising designs that help businesses stand out.",
+      "intro": "Creative marketing materials and advertising designs that help businesses stand out.",
+      "services": [
+        "Flyers & Posters",
+        "Brochures",
+        "Advertising Campaigns",
+        "Promotional Materials",
+        "Billboards & Banners",
+        "Marketing Collateral"
+      ],
+      "deliverables": []
+    },
+    {
+      "slug": "social-media-design",
+      "number": "03",
+      "title": "Social Media Design",
+      "shortTitle": "Social Media Design",
+      "icon": "social",
+      "summary": "Eye-catching visuals that help brands create a consistent and professional online presence.",
+      "intro": "Eye-catching visuals that help brands create a consistent and professional online presence.",
+      "services": [
+        "Instagram Posts",
+        "Instagram Stories",
+        "Social Media Carousels",
+        "Facebook Graphics",
+        "Social Media Templates",
+        "Digital Ad Creatives"
+      ],
+      "deliverables": []
+    },
+    {
+      "slug": "packaging",
+      "number": "04",
+      "title": "Packaging Design",
+      "shortTitle": "Packaging Design",
+      "icon": "packaging",
+      "summary": "Creative packaging that makes products stand out and communicates brand identity.",
+      "intro": "Creative packaging that makes products stand out and communicates brand identity.",
+      "services": [
+        "Product Packaging",
+        "Product Labels",
+        "Box Design",
+        "Bottle & Container Design",
+        "Food & Beverage Packaging",
+        "Cosmetic Packaging"
+      ],
+      "deliverables": []
+    },
+    {
+      "slug": "editorial-print",
+      "number": "05",
+      "title": "Editorial & Print Design",
+      "shortTitle": "Editorial & Print",
+      "icon": "editorial",
+      "summary": "Professional layouts and publications designed to communicate information beautifully.",
+      "intro": "Professional layouts and publications designed to communicate information beautifully.",
+      "services": [
+        "Magazines",
+        "Catalogues",
+        "Company Profiles",
+        "Menus",
+        "Books & E-books",
+        "Reports & Publications"
+      ],
+      "deliverables": []
+    },
+    {
+      "slug": "social-media-management",
+      "number": "06",
+      "title": "Social Media Management",
+      "shortTitle": "Social Media Management",
+      "icon": "management",
+      "summary": "Strategic social media management that builds brand awareness, engagement and consistency across platforms.",
+      "intro": "Strategic social media management that builds brand awareness, engagement and consistency across platforms.",
+      "services": [
+        "Social Media Strategy",
+        "Content Planning",
+        "Social Media Graphics",
+        "Copywriting & Caption Writing",
+        "Content Scheduling",
+        "Instagram Management",
+        "Facebook Management",
+        "TikTok Management",
+        "LinkedIn Management"
+      ],
+      "deliverables": []
+    }
+  ]
+}

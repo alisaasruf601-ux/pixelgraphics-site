@@ -1,0 +1,129 @@
+{
+  "hourly": {
+    "service": "Graphic design",
+    "department": "graphic-design",
+    "rate": 3.5,
+    "minHours": 4,
+    "maxHours": 200,
+    "rushSurcharge": 0.25,
+    "quickPicks": [
+      "4",
+      "8",
+      "16",
+      "24",
+      "40"
+    ],
+    "examples": [
+      "Flyers & posters",
+      "Social media posts",
+      "Brochures & menus",
+      "Presentations & pitch decks",
+      "Packaging artwork",
+      "Print-ready files"
+    ]
+  },
+  "packages": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "priceFrom": 200,
+      "period": "month",
+      "bestFor": "Small businesses that need a consistent, professional social media presence.",
+      "included": [
+        "Graphic design",
+        "Social media content",
+        "Content planning"
+      ],
+      "deliverables": [
+        "Up to 8 social media post designs per month",
+        "Monthly content calendar",
+        "Captions for designed posts",
+        "Management of 1 social media platform"
+      ],
+      "revisions": "2 revision rounds per design",
+      "duration": "Monthly, delivered in weekly batches",
+      "extras": [
+        "Additional post designs",
+        "Story designs",
+        "Extra platform"
+      ],
+      "limitations": [
+        "Advertising budget (ad spend) not included",
+        "Website design not included — available as a separate service",
+        "Photography and video shoots not included"
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "priceFrom": 350,
+      "period": "month",
+      "recommended": true,
+      "bestFor": "Growing brands ready to market actively across more channels.",
+      "included": [
+        "Graphic design",
+        "Social media management",
+        "Content planning",
+        "Digital marketing"
+      ],
+      "deliverables": [
+        "Up to 12 social media post or carousel designs per month",
+        "Up to 4 story designs per month",
+        "Monthly content calendar with captions and hashtag research",
+        "Scheduling on up to 2 social media platforms",
+        "1 additional graphic design item per month (e.g. flyer or banner)",
+        "Monthly performance report"
+      ],
+      "revisions": "2 revision rounds per design",
+      "duration": "Monthly, delivered in weekly batches",
+      "extras": [
+        "Ad creatives",
+        "Short animations",
+        "Extra platform"
+      ],
+      "limitations": [
+        "Advertising budget (ad spend) not included",
+        "Website design not included — available as a separate service",
+        "Photography and video shoots not included"
+      ]
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "priceFrom": 550,
+      "period": "month",
+      "bestFor": "Established businesses that want strategy, content and campaigns handled together.",
+      "included": [
+        "Brand support",
+        "Social media management",
+        "Digital marketing",
+        "Campaign support"
+      ],
+      "deliverables": [
+        "Up to 16 social media post or carousel designs per month",
+        "Up to 8 story designs per month",
+        "Up to 2 short social media animations per month",
+        "Scheduling on up to 3 social media platforms",
+        "Advertising creatives for 1 campaign per month",
+        "Monthly report and 30-minute online strategy call"
+      ],
+      "revisions": "3 revision rounds per design",
+      "duration": "Monthly, delivered in weekly batches",
+      "extras": [
+        "Campaign strategy",
+        "Promotional video",
+        "Brand refresh"
+      ],
+      "limitations": [
+        "Advertising budget (ad spend) not included",
+        "Website design not included — available as a separate service",
+        "Photography and video shoots not included"
+      ]
+    }
+  ],
+  "packageTerms": [
+    "Prices are starting prices in US dollars, billed monthly.",
+    "Unused deliverables do not carry over to the next month.",
+    "Work outside the agreed scope is quoted separately before we start."
+  ]
+}
