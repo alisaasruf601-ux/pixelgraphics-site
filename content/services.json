@@ -2,28 +2,33 @@
   "showcase": [
     {
       "title": "Branding & Visual Identity",
-      "image": "/uploads/Green-Digital-Marketer-Merchandise-Set.png",
+      "image": "/uploads/service-branding.webp",
       "slug": "branding"
     },
     {
       "title": "Marketing & Advertising",
-      "slug": "marketing-advertising"
+      "slug": "marketing-advertising",
+      "image": "/uploads/service-marketing-advertising.webp"
     },
     {
       "title": "Social Media Design",
-      "slug": "social-media-design"
+      "slug": "social-media-design",
+      "image": "/uploads/service-social-media-design.webp"
     },
     {
       "title": "Packaging Design",
-      "slug": "packaging"
+      "slug": "packaging",
+      "image": "/uploads/service-packaging.webp"
     },
     {
       "title": "Editorial & Print Design",
-      "slug": "editorial-print"
+      "slug": "editorial-print",
+      "image": "/uploads/service-editorial-print.webp"
     },
     {
       "title": "Social Media Management",
-      "slug": "social-media-management"
+      "slug": "social-media-management",
+      "image": "/uploads/service-social-media-management.webp"
     }
   ],
   "departments": [
