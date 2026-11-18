@@ -30,14 +30,6 @@ export default function PricingPage() {
         </ul>
       </PageHero>
 
-      <section id="packages" className="scroll-mt-24 py-20 sm:py-28">
-        <div className="container-site">
-          <Reveal><SectionHeading kicker="B · Monthly service packages" title="Monthly" accent="packages" intro="Ongoing support for brand, graphic design, social media, content planning and campaigns. Website design is not part of these packages and is available as a separate service." /></Reveal>
-          <PricingPreview detailed />
-          <ul className="mx-auto mt-12 max-w-3xl space-y-2 text-center text-sm text-ink-400">{packageTerms.map((t) => <li key={t}>{t}</li>)}</ul>
-        </div>
-      </section>
-
       <section id="hourly" className="scroll-mt-24 border-y border-white/5 bg-ink-900 py-20 sm:py-28">
         <div className="container-site">
           <Reveal><SectionHeading kicker="A · Graphic design by the hour" title="Hourly" accent="rate" intro="One-off graphic design work is charged per hour. Use the calculator to see your price instantly." /></Reveal>
@@ -64,6 +56,14 @@ export default function PricingPage() {
               </div>
             </Reveal>
           </div>
+        </div>
+      </section>
+
+      <section id="packages" className="scroll-mt-24 py-20 sm:py-28">
+        <div className="container-site">
+          <Reveal><SectionHeading kicker="B · Monthly service packages" title="Monthly" accent="packages" intro="Ongoing support for brand, graphic design, social media, content planning and campaigns. Website design is not part of these packages and is available as a separate service." /></Reveal>
+          <PricingPreview detailed />
+          <ul className="mx-auto mt-12 max-w-3xl space-y-2 text-center text-sm text-ink-400">{packageTerms.map((t) => <li key={t}>{t}</li>)}</ul>
         </div>
       </section>
 
