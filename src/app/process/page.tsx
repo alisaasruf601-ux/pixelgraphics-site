@@ -16,10 +16,10 @@ const journey: { title: string; icon: IconKey; text: string; you: string; link?:
   { title: "Project briefing", icon: "doc", text: "We collect the details: your business, goals, audience, deliverables, style and deadline.", you: "Fill in the project brief (about 10 minutes).", link: { label: "Open the brief", href: "/brief" } },
   { title: "Consultation", icon: "calendar", text: "A short online meeting to discuss your brief, ask questions and align on direction.", you: "Join the call on your preferred platform.", link: { label: "Book a meeting", href: bookingHref } },
   { title: "Proposal and quotation", icon: "calc", text: "You receive a clear proposal with scope, deliverables, timeline, revision rounds and price.", you: "Review the proposal and ask for changes if needed." },
-  { title: "Contract and payment", icon: "shield", text: "We confirm the agreement in writing. Work starts after the agreed deposit or first payment.", you: "Sign the agreement and make the first payment." },
+  { title: "Contract and payment", icon: "shield", text: "We confirm the agreement in writing. Work starts after a 50% deposit.", you: "Sign the agreement and pay the 50% deposit." },
   { title: "Creative development", icon: "pen", text: "We research, design and produce your work, sharing progress at agreed moments.", you: "Stay available for quick questions." },
   { title: "Feedback and revisions", icon: "eye", text: "You review the work and send consolidated feedback. We refine within the agreed revision rounds.", you: "Collect feedback from your team in one round." },
-  { title: "Final approval", icon: "check", text: "Once everything is right, you give final approval of the designs.", you: "Approve the final versions in writing." },
+  { title: "Final approval", icon: "check", text: "Once everything is right, you give final approval and pay the remaining 50%.", you: "Approve the final versions and pay the remaining 50%." },
   { title: "Delivery", icon: "handshake", text: "We deliver all final files in the agreed formats, ready to use online and in print.", you: "Download your files and start growing." },
 ];
 
