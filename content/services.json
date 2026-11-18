@@ -1,42 +1,36 @@
 {
   "showcase": [
     {
-      "slug": "branding",
       "title": "Branding & Visual Identity",
-      "image": ""
+      "image": "/uploads/Green-Digital-Marketer-Merchandise-Set.png",
+      "slug": "branding"
     },
     {
-      "slug": "marketing-advertising",
       "title": "Marketing & Advertising",
-      "image": ""
+      "slug": "marketing-advertising"
     },
     {
-      "slug": "social-media-design",
       "title": "Social Media Design",
-      "image": ""
+      "slug": "social-media-design"
     },
     {
-      "slug": "packaging",
       "title": "Packaging Design",
-      "image": ""
+      "slug": "packaging"
     },
     {
-      "slug": "editorial-print",
       "title": "Editorial & Print Design",
-      "image": ""
+      "slug": "editorial-print"
     },
     {
-      "slug": "social-media-management",
       "title": "Social Media Management",
-      "image": ""
+      "slug": "social-media-management"
     }
   ],
   "departments": [
     {
-      "slug": "branding",
-      "number": "01",
       "title": "Branding & Visual Identity",
       "shortTitle": "Branding & Identity",
+      "number": "01",
       "icon": "brand",
       "summary": "Distinctive logos and complete brand identities that make businesses recognizable.",
       "intro": "Distinctive logos and complete brand identities that make businesses recognizable.",
@@ -47,13 +41,13 @@
         "Business Cards & Stationery",
         "Brand Applications"
       ],
-      "deliverables": []
+      "deliverables": [],
+      "slug": "branding"
     },
     {
-      "slug": "marketing-advertising",
-      "number": "02",
       "title": "Marketing & Advertising",
       "shortTitle": "Marketing & Advertising",
+      "number": "02",
       "icon": "marketing",
       "summary": "Creative marketing materials and advertising designs that help businesses stand out.",
       "intro": "Creative marketing materials and advertising designs that help businesses stand out.",
@@ -65,13 +59,13 @@
         "Billboards & Banners",
         "Marketing Collateral"
       ],
-      "deliverables": []
+      "deliverables": [],
+      "slug": "marketing-advertising"
     },
     {
-      "slug": "social-media-design",
-      "number": "03",
       "title": "Social Media Design",
       "shortTitle": "Social Media Design",
+      "number": "03",
       "icon": "social",
       "summary": "Eye-catching visuals that help brands create a consistent and professional online presence.",
       "intro": "Eye-catching visuals that help brands create a consistent and professional online presence.",
@@ -83,13 +77,13 @@
         "Social Media Templates",
         "Digital Ad Creatives"
       ],
-      "deliverables": []
+      "deliverables": [],
+      "slug": "social-media-design"
     },
     {
-      "slug": "packaging",
-      "number": "04",
       "title": "Packaging Design",
       "shortTitle": "Packaging Design",
+      "number": "04",
       "icon": "packaging",
       "summary": "Creative packaging that makes products stand out and communicates brand identity.",
       "intro": "Creative packaging that makes products stand out and communicates brand identity.",
@@ -101,13 +95,13 @@
         "Food & Beverage Packaging",
         "Cosmetic Packaging"
       ],
-      "deliverables": []
+      "deliverables": [],
+      "slug": "packaging"
     },
     {
-      "slug": "editorial-print",
-      "number": "05",
       "title": "Editorial & Print Design",
       "shortTitle": "Editorial & Print",
+      "number": "05",
       "icon": "editorial",
       "summary": "Professional layouts and publications designed to communicate information beautifully.",
       "intro": "Professional layouts and publications designed to communicate information beautifully.",
@@ -119,13 +113,13 @@
         "Books & E-books",
         "Reports & Publications"
       ],
-      "deliverables": []
+      "deliverables": [],
+      "slug": "editorial-print"
     },
     {
-      "slug": "social-media-management",
-      "number": "06",
       "title": "Social Media Management",
       "shortTitle": "Social Media Management",
+      "number": "06",
       "icon": "management",
       "summary": "Strategic social media management that builds brand awareness, engagement and consistency across platforms.",
       "intro": "Strategic social media management that builds brand awareness, engagement and consistency across platforms.",
@@ -140,7 +134,8 @@
         "TikTok Management",
         "LinkedIn Management"
       ],
-      "deliverables": []
+      "deliverables": [],
+      "slug": "social-media-management"
     }
   ]
 }
