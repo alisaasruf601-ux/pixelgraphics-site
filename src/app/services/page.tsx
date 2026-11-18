@@ -3,6 +3,9 @@ import Link from "next/link";
 import { PageHero, Button } from "@/components/ui";
 import { departments } from "@/config/services";
 import { DeptVisual } from "@/components/DeptVisual";
+import servicesJson from "../../../content/services.json";
+
+const imageFor = (slug: string) => (servicesJson.showcase as { slug: string; image?: string }[]).find((s) => s.slug === slug)?.image;
 import { Reveal } from "@/components/Reveal";
 import { CalculatorBanner, FinalCTA } from "@/components/sections";
 
@@ -32,7 +35,12 @@ export default function ServicesPage() {
               <div className="container-site">
                 <div className={`grid items-start gap-10 rounded-panel border border-white/[0.06] p-5 sm:p-8 lg:grid-cols-2 lg:gap-14 lg:p-12 ${i % 2 ? "bg-ink-900" : "bg-ink-800/40"}`}>
                   <Reveal className={`${flip ? "lg:order-2" : ""} lg:sticky lg:top-28`}>
-                    <div className="group overflow-hidden rounded-card"><DeptVisual icon={d.icon} large className="aspect-[4/3]" /></div>
+                    <div className="group overflow-hidden rounded-card">
+                      {imageFor(d.slug)
+                        // eslint-disable-next-line @next/next/no-img-element
+                        ? <img src={imageFor(d.slug)} alt={d.title} loading="lazy" decoding="async" className="aspect-[16/11] w-full object-cover" />
+                        : <DeptVisual icon={d.icon} large className="aspect-[4/3]" />}
+                    </div>
                   </Reveal>
                   <Reveal delay={0.1}>
                     <p className="font-display text-5xl text-deep sm:text-7xl" aria-hidden="true">{d.number}</p>
