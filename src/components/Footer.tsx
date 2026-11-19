@@ -18,9 +18,9 @@ export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-ink-950 pt-20 sm:pt-24">
       <div className="container-site">
-        <div className="grid gap-12 border-b border-white/10 pb-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[1.3fr_0.8fr_1.1fr_0.9fr_1.75fr] [&>*]:min-w-0">
+        <div className="grid gap-12 border-b border-white/10 pb-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-[1.55fr_0.75fr_1.05fr_0.85fr_1.8fr] xl:gap-10 [&>*]:min-w-0">
           <div>
-            <Logo size={44} />
+            <Logo size={38} />
             <p className="mt-6 font-display text-xl uppercase text-cloud">Creative Without <span className="text-teal">Borders.</span></p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-300">A fully remote creative studio based in Suriname, working with brands around the world.</p>
           </div>

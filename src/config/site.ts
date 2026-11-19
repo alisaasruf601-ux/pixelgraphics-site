@@ -82,7 +82,7 @@ export function whatsappLink(message = "Hi Pixel Graphics, I'd like to talk abou
 
 export const socialLinks = (Object.entries(site.social) as [keyof typeof site.social, string][])
   .filter(([, url]) => Boolean(url))
-  .map(([key, url]) => ({ key, url, label: key[0].toUpperCase() + key.slice(1) }));
+  .map(([key, url]) => ({ key, url, label: key === "linkedin" ? "LinkedIn" : key[0].toUpperCase() + key.slice(1) }));
 
 /** Lists settings still missing — shown to the site owner in development only. */
 export function missingConfig(): string[] {
