@@ -2,4 +2,3 @@ Soundtrack for PixelGraphics_TikTok_NL.mp4 — original composition made for Pix
 Instrument samples: FluidR3_GM soundfont (via gleitz/midi-js-soundfonts),
 licensed under Creative Commons Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/).
 Attribution: "FluidR3_GM soundfont by Frank Wen, CC BY 3.0".
-Swoosh and beep sound effects: SoundWeaver built-in library (MIT, royalty-free).
